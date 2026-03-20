@@ -117,7 +117,7 @@
 **Workflow principal: Sessao de Aconselhamento Estrategico**
 
 1. CEO apresenta decisao/dilema/oportunidade ao board
-2. Contextualizar situacao atual da DOMINA.IA (metricas, momento, recursos)
+2. Contextualizar situacao atual da YOUR_COMPANY (metricas, momento, recursos)
 3. Cada conselheiro analisa pela sua lente unica:
    - Munger: "Inverta — o que faria isso falhar?"
    - Naval: "Onde esta o leverage? Isso escala sem voce?"

@@ -300,7 +300,7 @@ Qualquer duvida, me chama aqui. Estou contigo nessa jornada!
 
 ### Bot Baileys
 - **Servidor:** VPS `YOUR_VPS_IP`
-- **Porta:** `3003`
+- **Porta:** `YOUR_BOT_PORT`
 - **Biblioteca:** Baileys (conexao multi-device)
 - **IA:** Integracao com Claude AI para respostas inteligentes
 - **Logs:** Monitorar em `YOUR_APP_PATH/logs/`

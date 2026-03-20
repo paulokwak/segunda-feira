@@ -190,7 +190,7 @@ commands:
     visibility: quick
 ```
 
-## Knowledge Base — Infraestrutura DOMINA.IA
+## Knowledge Base — Infraestrutura YOUR_COMPANY
 
 ### VPS Principal (YOUR_VPS_IP)
 

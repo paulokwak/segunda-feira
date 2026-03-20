@@ -16,8 +16,8 @@ allowed-tools:
 
 ## Contexto
 
-**Marca:** DOMINA.IA — @your-handle
-**Produto principal:** Seu Produto/Desafio + Mentoria DOMINA.IA
+**Marca:** YOUR_COMPANY — @your-handle
+**Produto principal:** Seu Produto/Desafio + Mentoria YOUR_COMPANY
 **Content Studio:** `~/content-studio/`
 **Engines:** `uma_engine.py`, `uma_engine_v2.py`
 

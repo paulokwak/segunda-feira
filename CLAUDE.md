@@ -6,11 +6,12 @@ Act with **maximum autonomy**. Execute tasks yourself — do not ask permission 
 
 ## Core Framework
 
-Segunda-feira is a meta-framework that orchestrates AI agents for full stack development. All work happens within this architecture.
+Segunda-feira is a meta-framework that orchestrates AI agents for full stack development and business operations. All work happens within this architecture.
 
 ## Agent System
 
 - Activate agents with `@agent-name`: @dev, @qa, @architect, @pm, @po, @sm, @analyst, @content
+- Specialist agents: @copywriter, @creative-director, @cro-specialist, @growth-hacker, @prompt-engineer, @rag-architect, @vibe-coder, @voice-ai-specialist, @swarm-simulator, @automation-architect, @cold-outreach, @offer-engineer, @whatsapp-specialist, @workflow-orchestrator, @launch-strategist, @market-intel
 - Master agent: `@aios-master`
 - Agent commands use `*` prefix: `*help`, `*create-story`, `*task`, `*exit`
 - When an agent is active: adopt its persona, expertise, workflow patterns, and perspective for the entire interaction
@@ -31,12 +32,11 @@ All development starts with a story in `docs/stories/`.
 
 ## Segunda-feira Directory Structure
 
-- `aios-core/agents/` — Agent persona definitions (YAML/Markdown)
-- `aios-core/tasks/` — Executable task workflows
-- `aios-core/workflows/` — Multi-step workflow definitions
-- `aios-core/templates/` — Document and code templates
-- `aios-core/checklists/` — Validation and review checklists
-- `aios-core/rules/` — Framework rules and patterns
+- `commands/` — Agent command definitions (38 core + 7 operational)
+- `agents/` — Specialist agent persona definitions (16 subagents)
+- `skills/` — Invocable skills (20 specialized capabilities)
+- `rules/` — Framework rules and patterns (7 governance rules)
+- `organization/` — Organizational structure (8 departments)
 - `docs/stories/` — Development stories (numbered)
 - `docs/prd/` — Product requirement documents
 - `docs/architecture/` — System architecture documentation
@@ -50,7 +50,7 @@ All development starts with a story in `docs/stories/`.
 
 ## Segunda-feira Patterns
 
-- Templates: load from `aios-core/templates/`, render with context
+- Templates: load from templates, render with context
 - Agent commands: detected by `*` prefix, routed to active agent
 - Story updates: load story, update task status, save — update checkboxes immediately after completing tasks
 
@@ -66,6 +66,7 @@ All detailed rules live in `rules/`. Read them when relevant:
 | `ids-principles.md` | REUSE > ADAPT > CREATE hierarchy, verification gates |
 | `coderabbit-integration.md` | Self-healing config, severity handling |
 | `external-api-patterns.md` | SYNC > CACHE > REAL-TIME for API integrations |
+| `mcp-usage.md` | MCP server governance and tool selection priority |
 
 ## Critical Constraints
 
@@ -77,4 +78,4 @@ All detailed rules live in `rules/`. Read them when relevant:
 6. **Configuration files:** `.aios/config.yaml`, `.env`, `aios.config.js`
 
 ---
-*Segunda-feira — Constitution v3.0 | 38 agentes de IA. O terror do CLT.*
+*Segunda-feira — Constitution v4.0 | 47 agentes de IA. 20 skills. 7 rules. O terror do CLT.*

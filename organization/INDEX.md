@@ -1,4 +1,4 @@
-# DOMINA.IA — Modulo Organizacional
+# YOUR_COMPANY — Modulo Organizacional
 
 > 38 agentes de IA | 12 departamentos | 1 CEO | AI-First Company
 
@@ -80,4 +80,4 @@
 | **Haiku** | 9 | 24% | Operacional — scripts, checklists, monitoramento |
 
 ---
-*DOMINA.IA Organizational Module v1.0 — Segunda-feira | 38 agentes de IA. O terror do CLT.*
+*YOUR_COMPANY Organizational Module v1.0 — Segunda-feira | 38 agentes de IA. O terror do CLT.*

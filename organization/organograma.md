@@ -1,7 +1,7 @@
-# Organograma DOMINA.IA — Workforce de IA
+# Organograma YOUR_COMPANY — Workforce de IA
 
 > Versao: 1.0 | Atualizado: 2026-03-18
-> Empresa: DOMINA.IA
+> Empresa: YOUR_COMPANY
 
 ---
 
@@ -288,7 +288,7 @@ CEO
 |-------|---------|
 | **Head** | Sage (Mentor) |
 | **Membros** | Sage |
-| **Missao** | Criar e entregar conteudo educacional de alto impacto para mentorias, desafios e cursos da DOMINA.IA. |
+| **Missao** | Criar e entregar conteudo educacional de alto impacto para mentorias, desafios e cursos da YOUR_COMPANY. |
 | **KPIs** | Taxa de conclusao, NPS das aulas, engajamento dos alunos, taxa de presenca ao vivo, transformacao reportada |
 
 ---
@@ -459,4 +459,4 @@ OPERACOES --(alertas de sistema)------------------> ENGENHARIA
 
 ---
 
-*DOMINA.IA Organograma v1.0 — Segunda-feira | 38 agentes de IA. O terror do CLT.*
+*YOUR_COMPANY Organograma v1.0 — Segunda-feira | 38 agentes de IA. O terror do CLT.*
