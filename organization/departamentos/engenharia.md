@@ -295,4 +295,4 @@ CEO/Orion
 
 ---
 
-*Departamento de Engenharia — Segunda-feira v1.0*
+*Departamento de Engenharia — Segunda-feira v5.0*

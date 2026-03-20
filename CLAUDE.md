@@ -78,4 +78,4 @@ All detailed rules live in `rules/`. Read them when relevant:
 6. **Configuration files:** `.aios/config.yaml`, `.env`, `aios.config.js`
 
 ---
-*Segunda-feira — Constitution v4.0 | 47 agentes de IA. 20 skills. 7 rules. O terror do CLT.*
+*Segunda-feira — Constitution v5.0 | 47 agentes de IA. 20 skills. 7 rules. O terror do CLT.*

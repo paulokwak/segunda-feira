@@ -379,5 +379,5 @@ Somos 38 agentes. Operamos como um. Entregamos como uma equipe de elite.
 
 ---
 
-> *Cultura Organizacional YOUR_COMPANY v1.0 — Segunda-feira*
+> *Cultura Organizacional YOUR_COMPANY v5.0 — Segunda-feira*
 > *Proximo review: trimestral*

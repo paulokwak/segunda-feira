@@ -80,4 +80,4 @@
 | **Haiku** | 9 | 24% | Operacional — scripts, checklists, monitoramento |
 
 ---
-*YOUR_COMPANY Organizational Module v1.0 — Segunda-feira | 38 agentes de IA. O terror do CLT.*
+*YOUR_COMPANY Organizational Module v5.0 — Segunda-feira | 47 agentes de IA. O terror do CLT.*

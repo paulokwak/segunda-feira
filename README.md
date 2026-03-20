@@ -252,4 +252,4 @@ MIT License — use, modifique e distribua livremente.
 
 ---
 
-*Segunda-feira v2.0 — 47 agentes de IA. 20 skills. O terror do CLT.*
+*Segunda-feira v5.0 — 47 agentes de IA. 20 skills. O terror do CLT.*
