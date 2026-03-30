@@ -1,12 +1,12 @@
 # Segunda-feira
 
-**47 agentes de IA. 20 skills. 7 rules. O terror do CLT.**
+**47+ agentes de IA. 55 skills. 8 rules. Self-healing. O terror do CLT.**
 
 ---
 
 ## O que é
 
-Segunda-feira é um framework de orquestração de agentes de IA para desenvolvimento full-stack e operações de negócio. Ele define **47 agentes especializados** organizados em **8 departamentos**, cada um com:
+Segunda-feira é um framework de orquestração de agentes de IA para desenvolvimento full-stack e operações de negócio. Ele define **47+ agentes especializados** organizados em **8 departamentos**, cada um com:
 
 - **Job Description** completo (cargo, missão, KPIs, autoridade, restrições)
 - **POP (Procedimento Operacional Padrão)** — passo a passo de como o agente executa seu trabalho
@@ -17,6 +17,30 @@ Projetado para rodar com [Claude Code](https://docs.anthropic.com/en/docs/claude
 ## Por que o nome
 
 Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enquanto você toma café, 47 agentes já estão trabalhando.
+
+---
+
+## O que há de novo na V6
+
+### Intelligence Layer (novo)
+
+A V6 transforma o Segunda-feira de um framework **configurado** para um framework **inteligente**:
+
+| Componente | O que faz |
+|-----------|-----------|
+| **Health Check** (`scripts/`) | 41 verificações automáticas em 8 seções — o framework valida sua própria integridade |
+| **IDS Entity Registry** (`data/`) | 37 entidades catalogadas — força REUSE > ADAPT > CREATE operacionalmente |
+| **Smart Router** (`data/`) | 33 regras de roteamento + 8 colaborações multi-agente — roteamento automático de tarefas |
+| **Architecture Doc** (`docs/`) | 1.055 linhas documentando 7 camadas — o framework se auto-documenta |
+| **Decision Log** (`templates/`) | Template padronizado para decisões autônomas — learning loop |
+| **Workflow Matrix** (`docs/`) | 20 workflows com status de maturidade — clareza sobre o que funciona |
+
+### Outros upgrades V5 → V6
+
+- **+2 agentes** — @advogado-do-diabo (análise crítica) e @mestre-do-conselho (conselho deliberativo)
+- **+1 regra** — EROS Quality Gates (5 portões, taxonomia de falhas, proporcionalidade)
+- **100% skills com YAML frontmatter** (era 94.5% na V5)
+- **Todos os 47+ agentes com personas completas**
 
 ---
 
@@ -67,7 +91,7 @@ Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enqu
 | Launch Strategist | Estrategista de Lançamentos | opus |
 
 ### Agentes Especialistas (`agents/`)
-16 agentes com subagent definitions para domínios específicos:
+18 agentes com subagent definitions para domínios específicos:
 
 | Agente | Persona | Domínio |
 |--------|---------|---------|
@@ -87,6 +111,8 @@ Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enqu
 | Voice AI Specialist | Vox | Voice AI, dublagem, TTS, ASR |
 | WhatsApp Specialist | Zap | WhatsApp Bot, automações |
 | Workflow Orchestrator | — | Workflows multi-step |
+| **Advogado do Diabo** | — | **Análise crítica, riscos, suposições ocultas** |
+| **Mestre do Conselho** | — | **Conselho deliberativo multi-perspectiva** |
 
 ### Skills (`skills/`)
 20 skills especializadas que os agentes podem invocar:
@@ -121,11 +147,22 @@ Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enqu
 |---------|-----------|
 | `/analyze-competitors` | Análise competitiva completa de concorrentes |
 | `/campaign-report` | Relatório de campanha Meta Ads com análise Sobral/Hormozi |
-| `/conteudo-semanal` | Pesquisa + estratégia + criativos + upload Instagram |
+| `/conteúdo-semanal` | Pesquisa + estratégia + criativos + upload Instagram |
 | `/fix-instagram` | Diagnostica e corrige posts Instagram falhos |
 | `/plan-launch` | Planeja lançamento digital completo |
 | `/research` | Pesquisa profunda multi-fonte |
 | `/whatsapp-bot` | Gerencia WhatsApp Bot com Claude AI |
+
+### V6 Intelligence Layer (`docs/`, `data/`, `scripts/`, `templates/`)
+
+| Arquivo | Descrição |
+|---------|-----------|
+| `docs/architecture.md` | Arquitetura completa do framework (7 camadas, 1055 linhas) |
+| `docs/workflow-validation-matrix.md` | Status de maturidade de 20 workflows |
+| `data/entity-registry.yaml` | IDS Registry com 37 entidades reutilizáveis |
+| `data/smart-router.yaml` | Roteamento automático de tarefas (33 regras) |
+| `templates/decision-log-template.md` | Template para registro de decisões autônomas |
+| `scripts/health-check.sh` | Health check do framework (41 verificações) |
 
 ### Estrutura Organizacional (`organization/`)
 8 departamentos com POPs e SIPOCs completos:
@@ -142,7 +179,7 @@ Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enqu
 | Produto & Educação | Kai, Sage, Eve, Atlas, Market Intel, Launch Strategist | Produtos digitais e eventos |
 
 ### Rules (`rules/`)
-7 regras que governam o framework:
+8 regras que governam o framework:
 
 | Rule | Governa |
 |------|---------|
@@ -153,6 +190,7 @@ Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enqu
 | `coderabbit-integration.md` | Self-healing config, severity handling |
 | `external-api-patterns.md` | SYNC > CACHE > REAL-TIME for API integrations |
 | `mcp-usage.md` | MCP server governance and tool selection |
+| **`eros-quality.md`** | **5 quality gates, failure taxonomy, proportionality** |
 
 ---
 
@@ -168,7 +206,7 @@ Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enqu
 
 ```bash
 # Clone o repositório
-git clone https://github.com/YOUR_USERNAME/segunda-feira.git
+git clone https://github.com/DOMINA-IA/segunda-feira.git
 
 # Copie os arquivos para sua configuração Claude Code
 cp -r segunda-feira/commands/ ~/.claude/commands/
@@ -177,6 +215,12 @@ cp -r segunda-feira/skills/ ~/.claude/skills/
 cp -r segunda-feira/rules/ ~/.claude/rules/
 cp -r segunda-feira/organization/ ~/.claude/organization/
 cp segunda-feira/CLAUDE.md ~/.claude/CLAUDE.md
+
+# V6 Intelligence Layer (opcional mas recomendado)
+cp -r segunda-feira/scripts/ ~/.claude/scripts/
+cp -r segunda-feira/templates/ ~/.claude/templates/
+cp -r segunda-feira/data/ ~/.claude/data/
+cp -r segunda-feira/docs/ ~/.claude/docs/
 ```
 
 ### Uso básico
@@ -196,6 +240,9 @@ cp segunda-feira/CLAUDE.md ~/.claude/CLAUDE.md
 /paid-ads      # Gestão de tráfego pago
 /copywriting   # Copy persuasivo
 /launch-strategy  # Estratégia de lançamento
+
+# V6: Health check do framework
+bash ~/.claude/scripts/health-check.sh
 ```
 
 ### Personalização
@@ -222,13 +269,44 @@ Os agentes usam placeholders que você deve substituir:
 ```
 segunda-feira/
 ├── README.md
-├── CLAUDE.md
-├── agents/                            # 16 agentes especialistas
-├── commands/                          # 38 agentes core + 7 operacionais
-├── skills/                            # 20 skills invocáveis
-├── organization/                      # 8 departamentos
-└── rules/                             # 7 regras do framework
+├── CLAUDE.md                              # Constituição v6.0
+├── agents/                                # 18 agentes especialistas
+├── commands/                              # 38 agentes core + 7 operacionais
+├── skills/                                # 20 skills invocáveis
+├── organization/                          # 8 departamentos
+├── rules/                                 # 8 regras do framework
+├── docs/                                  # [V6] Arquitetura + Workflow Matrix
+│   ├── architecture.md                    # 7 camadas, 1055 linhas
+│   └── workflow-validation-matrix.md      # 20 workflows com maturidade
+├── data/                                  # [V6] IDS Registry + Smart Router
+│   ├── entity-registry.yaml              # 37 entidades reutilizáveis
+│   └── smart-router.yaml                 # 33 regras de roteamento
+├── templates/                             # [V6] Decision Log
+│   └── decision-log-template.md          # Template para decisões autônomas
+└── scripts/                               # [V6] Health Check
+    └── health-check.sh                   # 41 verificações automáticas
 ```
+
+---
+
+## Changelog
+
+### V6.0 (2026-03-29) — Intelligence Layer
+- **Health Check** — 41 verificações automáticas de integridade do framework
+- **IDS Entity Registry** — 37 entidades catalogadas, REUSE > ADAPT > CREATE operacional
+- **Smart Router** — 33 regras de roteamento + 8 colaborações multi-agente
+- **Architecture Doc** — Documentação completa de 7 camadas (1055 linhas)
+- **Decision Log Template** — Learning loop para decisões autônomas
+- **Workflow Validation Matrix** — 20 workflows com status de maturidade
+- **+2 agentes** — @advogado-do-diabo, @mestre-do-conselho
+- **+1 regra** — EROS Quality Gates
+- **100% skills padronizadas** com YAML frontmatter
+
+### V5.0 (2026-03-20) — Consolidation
+- Bump de versão, sanitização completa, 47 agentes, 20 skills
+
+### V3.0 (2026-03-18) — Foundation
+- Release inicial: 38 agentes, estrutura base
 
 ---
 
@@ -243,6 +321,7 @@ segunda-feira/
 - **IDS (Incremental Development System)** — REUSE > ADAPT > CREATE
 - **MiroFish** — Simulação multi-agente e inteligência coletiva
 - **B.L.A.S.T.** — Context engineering para desenvolvimento AI-first
+- **EROS** — 5 portões de qualidade integrados em todos os workflows
 
 ---
 
@@ -252,4 +331,4 @@ MIT License — use, modifique e distribua livremente.
 
 ---
 
-*Segunda-feira v5.0 — 47 agentes de IA. 20 skills. O terror do CLT.*
+*Segunda-feira v6.0 — 47+ agentes de IA. 55 skills. 8 rules. Self-healing. O terror do CLT.*
