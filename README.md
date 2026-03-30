@@ -18,7 +18,11 @@
 
 Projetado para [Claude Code](https://docs.anthropic.com/en/docs/claude-code) da Anthropic — transformando um único terminal em uma empresa inteira.
 
-[Instalação](#instalação) · [Arquitetura](#arquitetura) · [Agentes](#o-que-está-incluído) · [V6 Changelog](#changelog)
+[Instalação](#instalação-rápida-1-comando) · [Arquitetura](#arquitetura) · [Agentes](#o-que-está-incluído) · [V6 Changelog](#changelog)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/scripts/install.sh | bash
+```
 
 </div>
 
@@ -332,13 +336,21 @@ graph LR
 
 ## Como usar
 
+### Instalação rápida (1 comando)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/scripts/install.sh | bash
+```
+
+> O instalador faz backup automático de qualquer configuração existente antes de instalar.
+
 ### Pré-requisitos
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) instalado
-- Node.js 18+
 - Git
 
-### Instalação
+<details>
+<summary><b>Instalação manual (alternativa)</b></summary>
 
 ```bash
 # Clone o repositório
@@ -357,6 +369,14 @@ cp -r segunda-feira/scripts/ ~/.claude/scripts/
 cp -r segunda-feira/templates/ ~/.claude/templates/
 cp -r segunda-feira/data/ ~/.claude/data/
 cp -r segunda-feira/docs/ ~/.claude/docs/
+```
+
+</details>
+
+### Desinstalação
+
+```bash
+bash ~/.claude/scripts/uninstall.sh
 ```
 
 ### Uso básico
