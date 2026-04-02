@@ -22,7 +22,7 @@ Projetado para [Claude Code](https://docs.anthropic.com/en/docs/claude-code) da 
 [Instalação](#instalação-rápida-1-comando) · [Arquitetura](#arquitetura) · [Agentes](#o-que-está-incluído) · [V6.3 Changelog](#changelog)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/scripts/install.sh | bash
+npm install -g segunda-feira
 ```
 
 </div>
@@ -357,35 +357,63 @@ graph LR
 
 ## Como usar
 
-### Instalação rápida (1 comando)
+### Instalacao via npm (recomendado)
+
+```bash
+npm install -g segunda-feira
+```
+
+> O instalador faz backup automatico de qualquer configuracao existente antes de instalar.
+
+Ou use `npx` para instalar sem manter o pacote global:
+
+```bash
+npx segunda-feira
+```
+
+### Comandos do CLI
+
+```bash
+segunda-feira            # Instala o framework
+segunda-feira install    # Instala o framework
+segunda-feira update     # Atualiza para versao mais recente
+segunda-feira status     # Verifica instalacao
+segunda-feira uninstall  # Remove o framework (com backup)
+segunda-feira --version  # Mostra versao
+```
+
+### Pre-requisitos
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) instalado
+- [Node.js](https://nodejs.org/) >= 16
+- Git
+
+<details>
+<summary><b>Instalacao via curl (alternativa)</b></summary>
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/scripts/install.sh | bash
 ```
 
-> O instalador faz backup automático de qualquer configuração existente antes de instalar.
-
-### Pré-requisitos
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) instalado
-- Git
+</details>
 
 <details>
-<summary><b>Instalação manual (alternativa)</b></summary>
+<summary><b>Instalacao manual (alternativa)</b></summary>
 
 ```bash
-# Clone o repositório
+# Clone o repositorio
 git clone https://github.com/DOMINA-IA/segunda-feira.git
 
-# Copie os arquivos para sua configuração Claude Code
+# Copie os arquivos para sua configuracao Claude Code
 cp -r segunda-feira/commands/ ~/.claude/commands/
 cp -r segunda-feira/agents/ ~/.claude/agents/
 cp -r segunda-feira/skills/ ~/.claude/skills/
 cp -r segunda-feira/rules/ ~/.claude/rules/
+cp -r segunda-feira/hooks/ ~/.claude/hooks/
 cp -r segunda-feira/organization/ ~/.claude/organization/
 cp segunda-feira/CLAUDE.md ~/.claude/CLAUDE.md
 
-# V6 Intelligence Layer (opcional mas recomendado)
+# V6.3 Intelligence Layer (opcional mas recomendado)
 cp -r segunda-feira/scripts/ ~/.claude/scripts/
 cp -r segunda-feira/templates/ ~/.claude/templates/
 cp -r segunda-feira/data/ ~/.claude/data/
@@ -394,9 +422,11 @@ cp -r segunda-feira/docs/ ~/.claude/docs/
 
 </details>
 
-### Desinstalação
+### Desinstalacao
 
 ```bash
+segunda-feira uninstall
+# ou
 bash ~/.claude/scripts/uninstall.sh
 ```
 
@@ -431,10 +461,17 @@ Os agentes usam placeholders que você deve substituir:
 | `YOUR_COMPANY` | Nome da sua empresa |
 | `YOUR_NAME` | Seu nome |
 | `@your-handle` | Seu @ do Instagram |
-| `your-domain.com` | Seu domínio |
-| `YOUR_VPS_IP` | IP do seu servidor |
-| `YOUR_PIXEL_ID` | Seu Pixel Meta |
-| `YOUR_PAGE_ID` | Seu Page ID Meta |
+| `your-domain.com.br` | Seu dominio |
+| `${VPS_IP}` | IP do seu servidor VPS |
+| `${VPS_PASSWORD}` | Senha do VPS |
+| `${VPS_USER}` | Usuario do VPS (ex: root) |
+| `${HOSTINGER_IP}` | IP do Hostinger |
+| `${PIXEL_ID}` | Seu Pixel Meta |
+| `${PAGE_ID}` | Seu Page ID Meta |
+| `${META_AD_ACCOUNT}` | Seu Ad Account Meta |
+| `${INSTAGRAM_ACCOUNT_ID}` | Seu Instagram Account ID |
+| `${DATABASE_URL}` | Connection string do banco |
+| `${TELEGRAM_BOT_TOKEN}` | Token do bot Telegram |
 
 ---
 
@@ -442,7 +479,12 @@ Os agentes usam placeholders que você deve substituir:
 
 ```
 segunda-feira/
+├── package.json                           # npm package config
+├── bin/                                   # CLI installer (Node.js)
+│   ├── cli.js                             # segunda-feira CLI
+│   └── postinstall.js                     # Auto-install on npm install
 ├── README.md
+├── LICENSE
 ├── CLAUDE.md                              # Constituição v6.3
 ├── agents/                                # 21 agentes especialistas
 ├── commands/                              # 31 agentes core + 7 operacionais

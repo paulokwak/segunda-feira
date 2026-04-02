@@ -1,0 +1,52 @@
+{
+  "name": "segunda-feira",
+  "version": "6.3.0",
+  "description": "Framework de orquestracao de agentes de IA para Claude Code — 49+ agentes, 68 skills, 15 rules. O terror do CLT.",
+  "bin": {
+    "segunda-feira": "./bin/cli.js"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js"
+  },
+  "keywords": [
+    "claude-code",
+    "ai-agents",
+    "framework",
+    "orchestration",
+    "anthropic",
+    "claude",
+    "ai",
+    "automation",
+    "segunda-feira",
+    "domina-ia"
+  ],
+  "author": "DOMINA.IA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DOMINA-IA/segunda-feira.git"
+  },
+  "homepage": "https://github.com/DOMINA-IA/segunda-feira#readme",
+  "bugs": {
+    "url": "https://github.com/DOMINA-IA/segunda-feira/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "agents/",
+    "commands/",
+    "skills/",
+    "rules/",
+    "hooks/",
+    "organization/",
+    "scripts/",
+    "templates/",
+    "data/",
+    "docs/",
+    "CLAUDE.md",
+    "README.md",
+    "LICENSE"
+  ]
+}
