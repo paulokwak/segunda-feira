@@ -33,7 +33,7 @@ AGENTS_DIR="$CLAUDE_DIR/agents"
 SKILLS_DIR="$CLAUDE_DIR/skills"
 RULES_DIR="$CLAUDE_DIR/rules"
 HOOKS_DIR="$CLAUDE_DIR/hooks"
-MEMORY_DIR="$CLAUDE_DIR/projects/-Users-rudneisouzamazepa/memory"
+MEMORY_DIR="$CLAUDE_DIR/projects/${USER_PROJECT_PATH}/memory"
 AIOS_DIR="$HOME/.aios-core"
 CONSTITUTION="$CLAUDE_DIR/CLAUDE.md"
 

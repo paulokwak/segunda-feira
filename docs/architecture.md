@@ -455,13 +455,13 @@ Fluxo de delegação:
 
 #### Memória Persistente
 
-46 arquivos em `~/.claude/projects/-Users-rudneisouzamazepa/memory/`.
+46 arquivos em `~/.claude/projects/${USER_PROJECT_PATH}/memory/`.
 
 **Índice:** `MEMORY.md` — tabela com todos os arquivos e seus conteúdos.
 
 | Tipo | Exemplos | Quantidade |
 |------|----------|------------|
-| Projetos | `mygrowth.md`, `alr-dashboard.md`, `saude360.md` | 8+ |
+| Projetos | `mygrowth.md`, `client-dashboard.md`, `client-project.md` | 8+ |
 | Feedback rules | `feedback_*.md` | 14+ |
 | Agentes/Framework | `agentes.md`, `mcp-servers.md` | 5+ |
 | Campanhas | `desafio-mi-v4.md`, `desafio-ai-first.md` | 3+ |
@@ -779,12 +779,12 @@ PRD/Epic --> @sm cria story (Draft)
 | **Meta Ads API** | SYNC --> DB | Campaigns, insights, criativos | Tráfego pago, relatórios |
 | **WhatsApp (Baileys)** | REAL-TIME | Bot porta 3003 | Nutrição, vendas, automações |
 | **Telegram** | REAL-TIME | Claude Code Channels plugin | Notificações, comandos remotos |
-| **Supabase** | DB | PostgreSQL + RLS | Saúde 360, CRM MY GROWTH |
-| **ASAAS** | SYNC --> DB | Cobranças, pagamentos | ALR Dashboard |
-| **Eduzz/Greenn** | SYNC --> DB | Vendas, assinaturas | ALR Dashboard |
+| **Supabase** | DB | PostgreSQL + RLS | Client Project, CRM MY GROWTH |
+| **PAYMENT_API** | SYNC --> DB | Cobranças, pagamentos | Client Dashboard |
+| **SALES_PLATFORM/SALES_PLATFORM_B** | SYNC --> DB | Vendas, assinaturas | Client Dashboard |
 | **Instagram API** | SYNC | Content publishing | Publicação automática |
 | **Google Drive** | REAL-TIME | Storage | Vídeos, documentos |
-| **YouTube** | REAL-TIME | Embed | Vídeos Saúde 360 |
+| **YouTube** | REAL-TIME | Embed | Vídeos Client Project |
 
 ### MCP Servers
 
@@ -805,9 +805,9 @@ PRD/Epic --> @sm cria story (Draft)
 |---------|----------|
 | **VPS MY GROWTH** | `YOUR_VPS_IP` — PM2, Nginx, Node.js |
 | **Hostinger** | `YOUR_HOSTING_IP:PORT` — Sites estáticos |
-| **PM2 Apps** | my-growth (3001), alr-dashboard (3002), whatsapp-bot (3003), domina.ia (3004) |
+| **PM2 Apps** | my-growth (3001), client-dashboard (3002), whatsapp-bot (3003), domina.ia (3004) |
 | **Nginx** | Reverse proxy com SSL para todos os subdomínios |
-| **Domínio** | `rudneimazepa.com.br` + subdomínios |
+| **Domínio** | `your-domain.com.br` + subdomínios |
 
 ---
 
@@ -856,12 +856,12 @@ PRD/Epic --> @sm cria story (Draft)
     precompact-session-digest.js
     synapse-engine.js
   projects/
-    -Users-rudneisouzamazepa/
+    ${USER_PROJECT_PATH}/
       memory/                            # 46 arquivos de memória
         MEMORY.md                        # Índice
         agentes.md
         mygrowth.md
-        alr-dashboard.md
+        client-dashboard.md
         ... (46 arquivos .md)
 
 ~/.aios-core/                            # Engine Core (Synkra v4.0.4)

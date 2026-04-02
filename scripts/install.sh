@@ -24,7 +24,7 @@ REPO="DOMINA-IA/segunda-feira"
 REPO_URL="https://github.com/${REPO}.git"
 CLAUDE_DIR="$HOME/.claude"
 TMP_DIR=$(mktemp -d)
-VERSION="6.0"
+VERSION="6.3"
 
 # --- Helpers ---
 info()    { echo -e "  ${CYAN}${BOLD}INFO${NC}  $1"; }
@@ -48,7 +48,7 @@ echo '  ___) |  __/ (_| | |_| | | | | (_| | (_| |_____|  _|  __/ | | | (_| |'
 echo ' |____/ \___|\__, |\__,_|_| |_|\__,_|\__,_|     |_|  \___|_|_|  \__,_|'
 echo '             |___/                                                      '
 echo -e "${NC}"
-echo -e "  ${DIM}v${VERSION} — 47+ agentes de IA. O terror do CLT.${NC}"
+echo -e "  ${DIM}v${VERSION} — 49+ agentes de IA. 68 skills. O terror do CLT.${NC}"
 echo ""
 
 # ============================================================================
@@ -136,6 +136,14 @@ for dir in commands agents skills rules organization; do
         ok "$dir/ ($COUNT arquivos)"
     fi
 done
+
+# Hooks
+if [[ -d "$SRC/hooks" ]]; then
+    mkdir -p "$CLAUDE_DIR/hooks"
+    cp -r "$SRC/hooks"/* "$CLAUDE_DIR/hooks/" 2>/dev/null || true
+    COUNT=$(find "$SRC/hooks" -type f | wc -l | tr -d ' ')
+    ok "hooks/ ($COUNT arquivos) ${DIM}[V6.3]${NC}"
+fi
 
 # V6 Intelligence Layer
 for dir in scripts templates data docs; do

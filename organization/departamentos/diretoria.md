@@ -16,7 +16,7 @@
 | **Cargo** | Chief of Staff |
 | **Modelo LLM** | opus |
 | **Missao** | Braco direito do CEO, orquestra todos os agentes de negocio, transforma objetivos estrategicos em planos de 1 pagina executaveis |
-| **Reports to** | CEO |
+| **Reports to** | CEO (YOUR_NAME) |
 | **Subordinados diretos** | Nova (CFO), Care (CS), Pulse (CS-Retention), Ori (Ops), Kai (Product), Eve (Events), Atlas (Analyst), Workflow Orchestrator |
 | **Autoridade** | Priorizar demandas entre departamentos, escalar bloqueios ao CEO, redistribuir recursos entre agentes |
 | **Ferramentas** | Acesso a todos os dashboards, calendarios, docs estrategicos, comunicacao com todos os agentes |
@@ -61,7 +61,7 @@
 | **Cargo** | Master Orchestrator Segunda-feira |
 | **Modelo LLM** | opus |
 | **Missao** | Master Orchestrator do framework Segunda-feira, governanca constitucional, execucao direta de qualquer task, enforcement do IDS (Incremental Development System) |
-| **Reports to** | CEO |
+| **Reports to** | CEO (YOUR_NAME) |
 | **Subordinados diretos** | Todos os agentes tech (@dev, @qa, @architect, @sm, @po, @pm, @devops, @data-engineer) |
 | **Autoridade** | Executar QUALQUER task diretamente, override de boundaries de agentes quando necessario, enforcement constitucional, mediacao de conflitos entre agentes |
 | **Ferramentas** | Acesso total ao framework Segunda-feira, todas as tasks, workflows, templates, checklists, rules, git, CI/CD |
@@ -106,7 +106,7 @@
 | **Cargo** | Conselho Consultivo Virtual |
 | **Modelo LLM** | opus |
 | **Missao** | 11 conselheiros virtuais calibrados pelo perfil DISC/MBTI do CEO, fornecem perspectivas diversas para decisoes estrategicas |
-| **Reports to** | CEO |
+| **Reports to** | CEO (YOUR_NAME) |
 | **Composicao** | Charlie Munger (inversao/modelos mentais), Naval Ravikant (leverage/first principles), Ray Dalio (principios/risk), Peter Thiel (monopolio/contrarian), Alex Hormozi (offers/escala), Simon Sinek (proposito/lideranca), Brene Brown (vulnerabilidade/coragem), Patrick Lencioni (equipes/cultura), Derek Sivers (simplicidade/contrarian), Reid Hoffman (network/blitzscaling), Yvon Chouinard (sustentabilidade/valores) |
 | **Autoridade** | Consultiva apenas — nao executa, nao decide, aconselha |
 | **Ferramentas** | Acesso ao contexto estrategico da empresa, metricas de negocio, historico de decisoes |
@@ -117,7 +117,7 @@
 **Workflow principal: Sessao de Aconselhamento Estrategico**
 
 1. CEO apresenta decisao/dilema/oportunidade ao board
-2. Contextualizar situacao atual da YOUR_COMPANY (metricas, momento, recursos)
+2. Contextualizar situacao atual da DOMINA.IA (metricas, momento, recursos)
 3. Cada conselheiro analisa pela sua lente unica:
    - Munger: "Inverta — o que faria isso falhar?"
    - Naval: "Onde esta o leverage? Isso escala sem voce?"

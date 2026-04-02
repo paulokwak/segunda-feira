@@ -58,7 +58,7 @@ Toda peca de ad segue esta estrutura:
 - **Mercado Invisivel:** Curiosidade sobre oportunidade desconhecida.
 - **Medo de Ficar para Tras:** IA substituindo profissoes.
 - **Prova Social:** Resultados de alunos, depoimentos.
-- **Autoridade:** Credenciais do fundador, experiencia.
+- **Autoridade:** Credenciais do YOUR_NAME, experiencia.
 
 ### Angulos para Testar (rodar em paralelo)
 - **Lifestyle:** O que muda na sua vida com IA.
@@ -88,7 +88,7 @@ Toda peca de ad segue esta estrutura:
 5. Logo/marca (discreto, canto)
 
 ### Variacoes para Teste
-- **Variacao A:** Foto do fundador + texto overlay
+- **Variacao A:** Foto do YOUR_NAME + texto overlay
 - **Variacao B:** Bold typography only (sem foto)
 - **Variacao C:** Mockup de tela/dashboard (tech feel)
 - **Variacao D:** Split screen antes/depois
@@ -107,7 +107,7 @@ O workspace de criacao fica em `~/content-studio/`.
 ### Ao criar criativos:
 1. Verificar assets disponiveis antes de criar
 2. Usar o engine correto para gerar
-3. SEMPRE subir na plataforma de gestao (DB + diretorio correto) automaticamente
+3. SEMPRE subir no MY GROWTH (DB + diretorio correto) automaticamente
 4. Nunca mexer em posts ja agendados — verificar agenda antes
 5. Buscar imagens tematicas diferentes para cada peca
 

@@ -53,6 +53,19 @@ behavior:
 | MEDIUM | document_as_tech_debt | document_as_tech_debt |
 | LOW | ignore | ignore |
 
+## WSL Execution (Windows)
+
+```bash
+# Self-healing mode (automatic in dev tasks)
+wsl bash -c 'cd /mnt/c/.../aios-core && ~/.local/bin/coderabbit --severity CRITICAL,HIGH --auto-fix'
+
+# Manual review
+wsl bash -c 'cd /mnt/c/.../aios-core && ~/.local/bin/coderabbit -t uncommitted'
+
+# Prompt-only mode
+wsl bash -c 'cd /mnt/c/.../aios-core && ~/.local/bin/coderabbit --prompt-only -t uncommitted'
+```
+
 ## Integration Points
 
 | Workflow | Phase | Trigger | Agent |

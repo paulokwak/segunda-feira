@@ -90,7 +90,7 @@ python3 criar_campanha.py \
   --inicio "2026-03-20 00:05" \
   --fim "2026-03-27 23:59" \
   --nome "Nome Campanha" \
-  --público aberto \
+  --publico aberto \
   --ads-config ads.json
 ```
 
@@ -114,8 +114,8 @@ python3 upload_criativos_trafego.py "/caminho/pasta/" "Nome Campanha"
 python3 upload_criativos_trafego.py "/caminho/arquivo.png" "Nome Campanha" "Nome Peça"
 ```
 
-**Destino:** `YOUR_APP_PATH/public/traffic-creatives/{slug}/`
-**Dashboard:** https://your-growth-platform.com/traffic
+**Destino:** `/opt/my-growth/public/traffic-creatives/{slug}/`
+**Dashboard:** https://mygrowth.your-domain.com.br/traffic
 
 ---
 
@@ -203,7 +203,7 @@ registrar_post(
 python3 upload_v3_mygrowth.py
 ```
 
-**Dashboard:** https://your-growth-platform.com/instagram
+**Dashboard:** https://mygrowth.your-domain.com.br/instagram
 
 ---
 
@@ -212,7 +212,7 @@ python3 upload_v3_mygrowth.py
 **Processo:** Arquivos/código local → servidor de produção.
 
 **Para assets:** `upload_to_vps.py` (SFTP via paramiko)
-**Para app:** `ssh root@YOUR_VPS_IP "cd YOUR_APP_PATH/ && npm run build && pm2 restart YOUR_APP_NAME"`
+**Para app:** `ssh ${VPS_USER}@${VPS_IP} "cd /opt/my-growth && npm run build && pm2 restart my-growth"`
 
 ---
 
@@ -314,7 +314,7 @@ Verifica: resolução, proporção, cores, contraste dos criativos.
 ### 16. CONTEÚDO SEMANAL
 
 Workflow completo: Pesquisa → Estratégia → Roteiros → Criativos → Upload.
-Trigger: todo domingo. Skill `/conteúdo-semanal` já existe.
+Trigger: todo domingo. Skill `/conteudo-semanal` já existe.
 
 ---
 
@@ -369,7 +369,7 @@ TRIGGER: 2x/dia (11h e 18h)
 `FREEPIK_API_KEY`, `FAL_KEY`
 
 ### Constantes Meta Ads (Pixel/Page/Account)
-Armazenadas nos scripts e na memória do projeto.
+Armazenadas nos scripts e na memória `feedback_meta_api_campanhas.md`.
 
 ---
 
@@ -396,4 +396,4 @@ Armazenadas nos scripts e na memória do projeto.
 - Gera novos ângulos baseado em dados
 - Sobe campanha de teste
 - Escala winners automaticamente
-- Usuário só aprova decisões de alto risco (budget > X)
+- YOUR_NAME só aprova decisões de alto risco (budget > X)

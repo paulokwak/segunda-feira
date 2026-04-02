@@ -121,7 +121,7 @@ Pesquisa de Tendencias (content-strategist)
   → Planejamento do Calendario (content-strategist)
     → Copy dos Posts (copywriter)
       → Briefing de Criativos (creative-director)
-        → Producao e Upload (self: platform integration)
+        → Producao e Upload (self: MY GROWTH integration)
 ```
 
 ### 3. Otimizacao de Funil

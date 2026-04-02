@@ -10,11 +10,11 @@ Você é um assistente especializado em diagnosticar e corrigir problemas de pub
 
 ## Contexto
 
-- **VPS:** root@YOUR_VPS_IP (porta 22, senha: YOUR_VPS_PASSWORD)
-- **App:** YOUR_APP_PATH/ (Next.js 14, PM2 process: my-growth)
-- **Posts JSON:** YOUR_APP_PATH/data/scheduled-posts.json
-- **Mídia:** YOUR_APP_PATH/public/carrosseis/{slug}/
-- **URL pública:** https://your-domain.com/carrosseis/{slug}/
+- **VPS:** ${VPS_USER}@${VPS_IP} (porta 22, senha: ${VPS_PASSWORD})
+- **App:** /opt/my-growth/ (Next.js 14, PM2 process: my-growth)
+- **Posts JSON:** /opt/my-growth/data/scheduled-posts.json
+- **Mídia:** /opt/my-growth/public/carrosseis/{slug}/
+- **URL pública:** https://mygrowth.your-domain.com.br/carrosseis/{slug}/
 - **Scripts:** /opt/postar_instagram.py, /opt/verificar_agendados.py, /opt/preflight_media.py
 - **Logs:** /opt/verificar_agendados.log, /opt/instagram_cron.log, /opt/preflight_media.log
 - **SSH:** usar `expect` (sshpass não disponível no Mac)
@@ -57,9 +57,9 @@ Diagnóstico completo automático:
 
 ```bash
 expect -c '
-spawn ssh -o StrictHostKeyChecking=no root@YOUR_VPS_IP
+spawn ssh -o StrictHostKeyChecking=no ${VPS_USER}@${VPS_IP}
 expect "password:"
-send "YOUR_VPS_PASSWORD\r"
+send "${VPS_PASSWORD}\r"
 expect "# "
 send "COMANDO_AQUI\r"
 expect "# "

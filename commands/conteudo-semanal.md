@@ -4,7 +4,7 @@ argument-hint: "[pesquisar|planejar|gerar|upload|tudo]"
 allowed-tools: ["Bash", "Read", "Write", "Edit", "Grep", "Glob", "WebSearch", "WebFetch", "Agent"]
 ---
 
-# /conteúdo-semanal — Conteúdo Semanal Instagram
+# /conteudo-semanal — Conteúdo Semanal Instagram
 
 Skill completa para pesquisar tendências, planejar estratégia, gerar criativos visuais e subir tudo no MY GROWTH.
 
@@ -13,20 +13,20 @@ Skill completa para pesquisar tendências, planejar estratégia, gerar criativos
 ### Infraestrutura
 | Recurso | Detalhe |
 |---------|---------|
-| VPS MY GROWTH | `YOUR_VPS_IP` — root — `YOUR_VPS_PASSWORD` |
-| Posts JSON | `YOUR_APP_PATH/data/scheduled-posts.json` |
-| Imagens VPS | `YOUR_APP_PATH/public/carrosseis/{slug}/` |
+| VPS MY GROWTH | `${VPS_IP}` — root — `${VPS_PASSWORD}` |
+| Posts JSON | `/opt/my-growth/data/scheduled-posts.json` |
+| Imagens VPS | `/opt/my-growth/public/carrosseis/{slug}/` |
 | Content Studio | `~/content-studio/` |
 | Uma Engine V1 | `uma_engine.py` — PIL/Pillow (reels, carrosseis, stories) |
 | Uma Engine V2 | `uma_engine_v2.py` — HTML/Playwright (templates avançados) |
 | Stock Images | `assets/stock-images/` — imagens temáticas por tópico |
-| Fotos Fundador | `fotos-pessoais/rosto/` — 8 variantes com metadata |
-| Brand Config | `brand-config.json` — cores, fontes, formatos, CTAs |
+| Fotos YOUR_NAME | `fotos-pessoais/rosto/` — 8 variantes com metadata |
+| Brand Config | `your-name-brand.json` — cores, fontes, formatos, CTAs |
 | Output | `posts-criados/2026-03/` — criativos gerados |
 
 ### Perfil Instagram
 - **Handle:** @your-handle
-- **Negócio:** YOUR_COMPANY — YOUR_BUSINESS_DESCRIPTION
+- **Negócio:** DOMINA.IA — ferramentas com IA, mentoria, eventos
 - **Tom:** Autoridade + urgência + dados reais
 - **Ângulo campeão:** "R$3K a R$30K" com IA
 
@@ -43,7 +43,7 @@ Skill completa para pesquisar tendências, planejar estratégia, gerar criativos
 
 ## Comandos
 
-### /conteúdo-semanal pesquisar
+### /conteudo-semanal pesquisar
 
 Pesquisa tendências e notícias quentes de IA para a semana.
 
@@ -56,7 +56,7 @@ Pesquisa tendências e notícias quentes de IA para a semana.
 
 2. **Compilar TOP 10 tópicos** ranqueados por:
    - Potencial viral no Instagram (1-10)
-   - Conexão com narrativa atual (ex: Mercado Invisível, YOUR_COMPANY)
+   - Conexão com narrativa atual (ex: Mercado Invisível, DOMINA.IA)
    - Facilidade de criação visual
 
 3. **Para cada tópico incluir:**
@@ -65,13 +65,13 @@ Pesquisa tendências e notícias quentes de IA para a semana.
    - Ângulo para Instagram
    - Formato sugerido (reel, carrossel, feed)
 
-### /conteúdo-semanal planejar
+### /conteudo-semanal planejar
 
 Monta o plano da semana com posts dia a dia.
 
 1. **PRIMEIRO:** Verificar agenda existente no MY GROWTH via SSH
    ```
-   cat YOUR_APP_PATH/data/scheduled-posts.json
+   cat /opt/my-growth/data/scheduled-posts.json
    ```
    Identificar quais datas/horários JÁ TÊM posts agendados.
 
@@ -95,7 +95,7 @@ Monta o plano da semana com posts dia a dia.
    - IDs sequenciais (pegar último ID + 1)
    - Formato JSON exato do MY GROWTH
 
-### /conteúdo-semanal gerar
+### /conteudo-semanal gerar
 
 Gera os criativos visuais para todos os posts.
 
@@ -103,14 +103,14 @@ Gera os criativos visuais para todos os posts.
    - Buscar imagem temática no Unsplash/Pexels via WebFetch
    - Salvar em `assets/stock-images/{tema}.jpg`
    - NUNCA usar a mesma imagem em posts diferentes
-   - NUNCA usar só a foto do Fundador em tudo
+   - NUNCA usar só a foto do YOUR_NAME em tudo
 
 2. **Tipos de criativo e funções:**
 
    | Tipo | Função | Engine |
    |------|--------|--------|
    | Reel com stock | `render_reel_stock()` | Script custom (V2) |
-   | Reel com foto Fundador | `render_reel()` | uma_engine.py |
+   | Reel com foto YOUR_NAME | `render_reel()` | uma_engine.py |
    | Carrossel dark | `render_carrossel()` | uma_engine.py |
    | Carrossel news | `render_carrossel_news()` | uma_engine.py |
    | Carrossel tweet | `render_carrossel_tweet()` | uma_engine.py |
@@ -131,7 +131,7 @@ Gera os criativos visuais para todos os posts.
    - Checar: texto cortado? Imagem legível? Variedade visual?
    - SE houver problema, corrigir ANTES de fazer upload
 
-### /conteúdo-semanal upload
+### /conteudo-semanal upload
 
 Sobe criativos no MY GROWTH VPS.
 
@@ -140,13 +140,13 @@ Sobe criativos no MY GROWTH VPS.
    import paramiko
    ssh = paramiko.SSHClient()
    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-   ssh.connect("YOUR_VPS_IP", username="root", password="YOUR_VPS_PASSWORD")
+   ssh.connect("${VPS_IP}", username="root", password="${VPS_PASSWORD}")
    sftp = ssh.open_sftp()
    ```
 
 2. **Estrutura de diretórios no VPS:**
    ```
-   YOUR_APP_PATH/public/carrosseis/{slug}/
+   /opt/my-growth/public/carrosseis/{slug}/
      slide_01_capa.jpg    ← primeiro slide (capa)
      slide_02.jpg         ← slide 2
      slide_03.jpg         ← slide 3
@@ -166,10 +166,10 @@ Sobe criativos no MY GROWTH VPS.
    - Manter status "rascunho" até aprovação manual
 
 5. **Após upload, verificar no painel MY GROWTH:**
-   - Abrir https://your-growth-platform.com
+   - Abrir https://mygrowth.your-domain.com.br
    - Conferir cada post: thumbnail aparece? Slides carregam?
 
-### /conteúdo-semanal tudo
+### /conteudo-semanal tudo
 
 Executa o fluxo completo em sequência:
 1. `pesquisar` → trends e notícias
@@ -244,12 +244,12 @@ from pathlib import Path
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect("YOUR_VPS_IP", username="root", password="YOUR_VPS_PASSWORD")
+ssh.connect("${VPS_IP}", username="root", password="${VPS_PASSWORD}")
 sftp = ssh.open_sftp()
 
 slug = "nome-do-post"
 local_files = sorted(glob.glob(f"posts-criados/2026-03/{slug}-*.jpg"))
-remote_dir = f"YOUR_APP_PATH/public/carrosseis/{slug}"
+remote_dir = f"/opt/my-growth/public/carrosseis/{slug}"
 
 try:
     sftp.stat(remote_dir)
@@ -274,7 +274,7 @@ ssh.close()
 | Slide CTA não aparece no MY GROWTH | Nome com `_cta` no arquivo | Renomear para `slide_XX.jpg` (sem sufixo) |
 | Texto cortado no reel | Subtítulo muito longo | Máx 35 chars/linha, máx 3 linhas |
 | Mesma foto em todos os reels | Usando `render_reel()` padrão | Usar `render_reel_stock()` com imagem temática |
-| Post sem thumbnail no calendário | Diretório não criado no VPS | Criar `YOUR_APP_PATH/public/carrosseis/{slug}/` |
+| Post sem thumbnail no calendário | Diretório não criado no VPS | Criar `/opt/my-growth/public/carrosseis/{slug}/` |
 | Imagem quebrada no MY GROWTH | Arquivo não existe ou nome errado | Verificar ls no diretório do VPS |
 | Conflito com post existente | Criou em data/horário já ocupado | SEMPRE verificar `scheduled-posts.json` ANTES |
 
@@ -283,7 +283,7 @@ ssh.close()
 - **SEMPRE** verificar agenda existente no MY GROWTH antes de criar novos posts
 - **NUNCA** modificar posts já agendados/publicados
 - **SEMPRE** usar imagens temáticas DIFERENTES para cada post
-- **NUNCA** repetir a mesma foto do Fundador em todos os reels
+- **NUNCA** repetir a mesma foto do YOUR_NAME em todos os reels
 - **SEMPRE** incluir fonte da notícia na legenda E na imagem
 - **SEMPRE** usar acentos e cedilha (ã, é, ç, ô) — NUNCA sem acentuação
 - **SEMPRE** verificar visualmente cada criativo antes de fazer upload
@@ -306,5 +306,5 @@ ssh.close()
 | `regenerar_carrosseis_45.py` | Regenerar carrosseis em lote |
 | `campanha_mercado_invisivel.py` | Criativos de ads com PIL |
 | `upload_v3_mygrowth.py` | Upload original dos 21 posts |
-| `photo_config.py` | Metadata das fotos do Fundador |
-| `brand-config.json` | Identidade visual completa |
+| `photo_config.py` | Metadata das fotos do YOUR_NAME |
+| `your-name-brand.json` | Identidade visual completa |

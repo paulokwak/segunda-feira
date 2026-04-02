@@ -39,7 +39,7 @@ Draft → Ready → InProgress → InReview → Done
 9. Criteria of Done (clear definition of complete)
 10. Alignment with PRD/Epic (consistency with source docs)
 
-**Decision:** GO (>=7/10) or NO-GO (<7/10 with required fixes)
+**Decision:** GO (≥7/10) or NO-GO (<7/10 with required fixes)
 
 ## Phase 3: Implement (@dev)
 

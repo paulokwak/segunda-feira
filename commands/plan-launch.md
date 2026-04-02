@@ -9,11 +9,11 @@ allowed-tools: ["Bash", "Read", "Write", "Edit", "Glob", "Grep", "WebFetch", "We
 Planeje o lançamento completo para: $ARGUMENTS
 
 ## Contexto
-- **Empresa:** YOUR_COMPANY — YOUR_NAME
-- **Experiência anterior:** YOUR_PREVIOUS_LAUNCHES
+- **Empresa:** DOMINA.IA — YOUR_NAME
+- **Experiência anterior:** Desafio "O Mercado Invisível da IA" (Mar/2026)
 - **Canais:** Instagram (@your-handle), Meta Ads, WhatsApp, LP própria
-- **Infraestrutura:** CRM/automação, Content Studio, VPS próprio
-- Leia a memória em `~/.claude/projects/` para contexto completo
+- **Infraestrutura:** MY GROWTH (CRM/automação), Content Studio, VPS próprio
+- Leia a memória em `~/.claude/projects/${USER_PROJECT_PATH}/memory/` para contexto completo
 
 ## Instruções de Execução
 
@@ -21,7 +21,7 @@ Planeje o lançamento completo para: $ARGUMENTS
 - Use WebSearch para pesquisar lançamentos similares no nicho
 - Busque benchmarks de CPL, taxa de conversão, ticket médio
 - Identifique o melhor formato: desafio, webinar, workshop, masterclass, evento
-- Avalie timing: datas ideais, evitar conflitos com feriados/eventos
+- Analise timing: datas ideais, evitar conflitos com feriados/eventos
 
 ### Passo 2: Definição do Produto/Evento
 - **Nome e formato**: definição clara do que será lançado
@@ -77,7 +77,7 @@ Calcule baseado em benchmarks reais:
 
 ### Investimento em Tráfego
 - Budget total: R$ X
-- CPL alvo: R$ X (baseado no histórico YOUR_COMPANY)
+- CPL alvo: R$ X (baseado no histórico DOMINA.IA)
 - Leads projetados: X
 - Distribuição por fase:
   - Teste (dias 1-3): X% do budget
@@ -155,5 +155,5 @@ Planeje a nutrição via WhatsApp (NÃO email):
 3. [ ] [Terceira ação]
 
 ## Decisões Pendentes
-- [ ] [Decisão que precisa do Fundador]
+- [ ] [Decisão que precisa do YOUR_NAME]
 ```

@@ -9,9 +9,9 @@ allowed-tools: ["Bash", "Read", "Write", "Glob", "Grep", "WebFetch", "WebSearch"
 Analise o concorrente: $ARGUMENTS
 
 ## Contexto
-- **Nosso negócio:** YOUR_COMPANY — YOUR_NAME (@your-handle)
-- **Nicho:** YOUR_NICHE
-- **Produto atual:** YOUR_PRODUCT
+- **Nosso negócio:** DOMINA.IA — YOUR_NAME (@your-handle)
+- **Nicho:** Ferramentas com IA, mentoria, eventos presenciais e online
+- **Produto atual:** Desafio "O Mercado Invisível da IA" + Mentoria DOMINA.IA
 
 ## Instruções de Execução
 
@@ -61,7 +61,7 @@ Mapeie a estrutura de produtos/serviços:
 ### Passo 6: SWOT Comparativo
 
 ```markdown
-## SWOT — [Concorrente] vs YOUR_COMPANY
+## SWOT — [Concorrente] vs DOMINA.IA
 
 ### Forças do Concorrente (que devemos aprender)
 - ...
@@ -69,10 +69,10 @@ Mapeie a estrutura de produtos/serviços:
 ### Fraquezas do Concorrente (que podemos explorar)
 - ...
 
-### Oportunidades para YOUR_COMPANY
+### Oportunidades para DOMINA.IA
 - ...
 
-### Ameaças para YOUR_COMPANY
+### Ameaças para DOMINA.IA
 - ...
 ```
 
@@ -106,7 +106,7 @@ Gere o relatório completo:
 ## SWOT Comparativo
 [Detalhamento do Passo 6]
 
-## Recomendações para YOUR_COMPANY
+## Recomendações para DOMINA.IA
 
 ### O que copiar/adaptar
 1. ...

@@ -81,17 +81,17 @@
 ## Exemplo Preenchido
 
 ```markdown
-### DEC-001 — Usar sync periódico em vez de real-time para dashboard ASAAS
+### DEC-001 — Usar sync periódico em vez de real-time para dashboard PAYMENT_API
 
 | Campo | Valor |
 |-------|-------|
 | **Data** | 2026-03-17 14:30 |
 | **Agente** | @architect |
-| **Contexto** | ALR Dashboard — módulo financeiro |
+| **Contexto** | Client Dashboard — módulo financeiro |
 | **Tipo** | ARQUITETURA |
 | **Severidade** | CRÍTICA |
 
-**Situação:** Dashboard financeiro fazendo ~300 chamadas paginadas ao ASAAS por acesso. Rate limit 429 cascateou e bloqueou API por >1h.
+**Situação:** Dashboard financeiro fazendo ~300 chamadas paginadas ao PAYMENT_API por acesso. Rate limit 429 cascateou e bloqueou API por >1h.
 
 **Opções Avaliadas:**
 

@@ -108,3 +108,5 @@ circuit_breaker:
 2. **Decision Hierarchy** — REUSE > ADAPT > CREATE strictly
 3. **Adaptation Limits** — Changes < 30%, don't break consumers
 4. **Creation Requirements** — Full justification, register within 24h
+
+**Reference:** `docs/stories/epics/epic-ids-incremental-development/`

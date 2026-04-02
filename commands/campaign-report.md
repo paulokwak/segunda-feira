@@ -11,7 +11,7 @@ Gere um relatório completo de performance de campanha Meta Ads para o argumento
 ## Instruções de Execução
 
 ### Passo 1: Coleta de Dados
-- Leia a memória do projeto em `~/.claude/projects/` para contexto das campanhas ativas
+- Leia a memória do projeto em `~/.claude/projects/${USER_PROJECT_PATH}/memory/desafio-mi-v4.md` e `~/.claude/projects/${USER_PROJECT_PATH}/memory/MEMORY.md` para contexto das campanhas ativas
 - Se um campaign-id específico foi fornecido, foque nessa campanha
 - Se 'all' foi passado, analise todas as campanhas ativas
 - Colete: CPL, CTR, frequência, alcance, conversões, gasto, período, criativos ativos

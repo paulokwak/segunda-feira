@@ -49,12 +49,12 @@ Compile todos os dados em uma análise estruturada:
 - **Oportunidades**: gaps que podem ser explorados
 - **Riscos**: ameaças ou problemas identificados
 
-### Passo 6: Contexto YOUR_COMPANY
+### Passo 6: Contexto DOMINA.IA
 Conecte os achados com o negócio:
-- Como isso afeta a YOUR_COMPANY?
+- Como isso afeta a DOMINA.IA?
 - Oportunidades de conteúdo/produto?
 - Ameaças competitivas?
-- Ações recomendadas para o Fundador
+- Ações recomendadas para YOUR_NAME
 
 ### Passo 7: Salvar Relatório
 Gere o relatório e salve em `~/research/`:
@@ -92,7 +92,7 @@ Gere o relatório e salve em `~/research/`:
 ### Tendências Emergentes
 [Para onde está indo]
 
-## Aplicação — YOUR_COMPANY
+## Aplicação — DOMINA.IA
 - Oportunidades: ...
 - Ameaças: ...
 - Ações recomendadas: ...

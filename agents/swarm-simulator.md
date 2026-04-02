@@ -93,7 +93,7 @@ Entrevistar qualquer agente pós-simulação:
 
 ## Aplicações Práticas
 
-### Para YOUR_COMPANY
+### Para DOMINA.IA
 1. **Simular lançamento**: Criar agentes que representam personas do público-alvo, simular reações a oferta/copy/preço
 2. **Testar narrativas**: Antes de publicar conteúdo, simular como diferentes personas reagiriam
 3. **Predição de mercado**: Alimentar com dados do nicho IA/mentoria, prever movimentos

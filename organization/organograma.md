@@ -1,36 +1,37 @@
-# Organograma YOUR_COMPANY — Workforce de IA
+# Organograma DOMINA.IA — Workforce de IA
 
 > Versao: 1.0 | Atualizado: 2026-03-18
-> Empresa: YOUR_COMPANY
+> Empresa: DOMINA.IA | CEO: YOUR_NAME
 
 ---
 
 ## 1. Organograma Visual
 
 ```
-                              CEO
-                               |
-              +----------------+--------------------+
-              |                    |                 |
+                              RUDNEI MAZEPA
+                                  (CEO)
+                                   |
+              ┌────────────────────┼────────────────────┐
+              |                    |                     |
          NEXO (Chief)       ORION (Segunda-feira)   BOARD (Advisory)
         Dir. Negocios        Framework & Gov.       Conselheiros
               |                    |
-  +-----------+---------------+    |
-  |           |               |    +-- ENGENHARIA
-  |           |               |    |   +-- Morgan (PM)
-  |           |               |    |   +-- Dex (Dev)
-  |           |               |    |   +-- Quinn (QA)
-  |           |               |    |   +-- Aria (Architect)
-  |           |               |    |   +-- Gage (DevOps)
-  |           |               |    |   +-- Dara (Data Engineer)
-  |           |               |    |   +-- Pax (PO)
-  |           |               |    |   +-- River (SM)
-  |           |               |    |   +-- Craft (Squad Creator)
-  |           |               |    |   +-- Uma (UX Designer)
+  ┌───────────┼───────────────┐    |
+  |           |               |    ├── ENGENHARIA
+  |           |               |    |   ├── Morgan (PM)
+  |           |               |    |   ├── Dex (Dev)
+  |           |               |    |   ├── Quinn (QA)
+  |           |               |    |   ├── Aria (Architect)
+  |           |               |    |   ├── Gage (DevOps)
+  |           |               |    |   ├── Dara (Data Engineer)
+  |           |               |    |   ├── Pax (PO)
+  |           |               |    |   ├── River (SM)
+  |           |               |    |   ├── Craft (Squad Creator)
+  |           |               |    |   └── Uma (UX Designer)
   |           |               |    |
-  |           |               |    +-- Atlas (Analyst / Intel)
+  |           |               |    └── Atlas (Analyst / Intel)
   |           |               |
-  |     +-----+-----+        |
+  |     ┌─────┼─────┐        |
   |     |     |     |        |
   |   VENDAS  |   CS/RET     |
   |     |   PROD    |        |
@@ -40,7 +41,7 @@
   |    Primo                 |
   |    Apex                  |
   |                          |
-  +-- MARKETING    +-- FINANCEIRO    +-- OPERACOES    +-- EDUCACAO    +-- EVENTOS
+  ├── MARKETING    ├── FINANCEIRO    ├── OPERACOES    ├── EDUCACAO    ├── EVENTOS
   |                |                 |                |               |
   Trig (Traffic)   Nova (CFO)       Ori (Ops)        Sage (Mentor)   Eve (Events)
   Luna (Content)   Flex (Fin-Asst)  Sentinel (Mon)
@@ -50,63 +51,63 @@
 ### Visao Simplificada por Reporte
 
 ```
-CEO
-+-- Nexo (Chief de Negocios)
-|   +-- MARKETING & CONTEUDO
-|   |   +-- Trig (Trafego Pago)
-|   |   +-- Luna (Conteudo & Social)
-|   |   +-- Dash (Video Producer)
-|   |       +-- Subagents: copywriter, creative-director, cro-specialist
+CEO (YOUR_NAME)
+├── Nexo (Chief de Negocios)
+|   ├── MARKETING & CONTEUDO
+|   |   ├── Trig (Trafego Pago)
+|   |   ├── Luna (Conteudo & Social)
+|   |   └── Dash (Video Producer)
+|   |       └── Subagents: copywriter, creative-director, cro-specialist
 |   |
-|   +-- COMERCIAL & VENDAS
-|   |   +-- Max (Head Comercial)
-|   |   |   +-- Nico (Sales Manager)
-|   |   |       +-- Primo (SDR)
-|   |   |       +-- Apex (Closer)
-|   |   +-- Subagent: whatsapp-specialist
+|   ├── COMERCIAL & VENDAS
+|   |   ├── Max (Head Comercial)
+|   |   |   └── Nico (Sales Manager)
+|   |   |       ├── Primo (SDR)
+|   |   |       └── Apex (Closer)
+|   |   └── Subagent: whatsapp-specialist
 |   |
-|   +-- PRODUTO
-|   |   +-- Kai (Product Manager)
-|   |       +-- Subagent: launch-strategist
+|   ├── PRODUTO
+|   |   └── Kai (Product Manager)
+|   |       └── Subagent: launch-strategist
 |   |
-|   +-- FINANCEIRO
-|   |   +-- Nova (CFO)
-|   |       +-- Flex (Assistente Financeiro)
-|   |       +-- Finn (Plataformas Financeiras)
+|   ├── FINANCEIRO
+|   |   └── Nova (CFO)
+|   |       ├── Flex (Assistente Financeiro)
+|   |       └── Finn (Plataformas Financeiras)
 |   |
-|   +-- CUSTOMER SUCCESS
-|   |   +-- Care (CS Manager)
-|   |   +-- Pulse (CS Retencao)
+|   ├── CUSTOMER SUCCESS
+|   |   ├── Care (CS Manager)
+|   |   └── Pulse (CS Retencao)
 |   |
-|   +-- OPERACOES
-|   |   +-- Ori (Ops Manager)
-|   |   +-- Sentinel (Monitoramento)
-|   |       +-- Subagent: workflow-orchestrator
+|   ├── OPERACOES
+|   |   ├── Ori (Ops Manager)
+|   |   └── Sentinel (Monitoramento)
+|   |       └── Subagent: workflow-orchestrator
 |   |
-|   +-- EDUCACAO & MENTORIA
-|   |   +-- Sage (Mentor)
+|   ├── EDUCACAO & MENTORIA
+|   |   └── Sage (Mentor)
 |   |
-|   +-- EVENTOS
-|       +-- Eve (Events Manager)
+|   └── EVENTOS
+|       └── Eve (Events Manager)
 |
-+-- Orion (Segunda-feira — Framework & Governanca)
-|   +-- ENGENHARIA
-|   |   +-- Morgan (PM)
-|   |   +-- Dex (Dev)
-|   |   +-- Quinn (QA)
-|   |   +-- Aria (Architect)
-|   |   +-- Gage (DevOps)
-|   |   +-- Dara (Data Engineer)
-|   |   +-- Pax (PO)
-|   |   +-- River (SM)
-|   |   +-- Craft (Squad Creator)
-|   |   +-- Uma (UX Designer)
+├── Orion (Segunda-feira — Framework & Governanca)
+|   ├── ENGENHARIA
+|   |   ├── Morgan (PM)
+|   |   ├── Dex (Dev)
+|   |   ├── Quinn (QA)
+|   |   ├── Aria (Architect)
+|   |   ├── Gage (DevOps)
+|   |   ├── Dara (Data Engineer)
+|   |   ├── Pax (PO)
+|   |   ├── River (SM)
+|   |   ├── Craft (Squad Creator)
+|   |   └── Uma (UX Designer)
 |   |
-|   +-- INTELIGENCIA DE MERCADO
-|       +-- Atlas (Analyst)
-|           +-- Subagent: market-intel
+|   └── INTELIGENCIA DE MERCADO
+|       └── Atlas (Analyst)
+|           └── Subagent: market-intel
 |
-+-- Board Advisory (Conselheiros)
+└── Board Advisory (Conselheiros)
 ```
 
 ---
@@ -117,7 +118,7 @@ CEO
 
 | Campo | Detalhe |
 |-------|---------|
-| **Head** | CEO |
+| **Head** | YOUR_NAME (CEO) |
 | **Membros** | Nexo (Chief de Negocios), Board Advisory |
 | **Missao** | Definir visao estrategica, aprovar decisoes criticas e garantir alinhamento entre negocios e tecnologia. |
 | **KPIs** | Receita total, margem liquida, NPS geral, crescimento MoM, burn rate |
@@ -240,7 +241,7 @@ CEO
 |--------|--------|---------------|
 | Nova | CFO | Estrategia financeira, relatorios, decisoes de investimento |
 | Flex | Assistente Financeiro | Contas a pagar/receber, conciliacao, DRE |
-| Finn | Plataformas Financeiras | Integracoes com plataformas de pagamento, dashboards financeiros |
+| Finn | Plataformas Financeiras | Integracoes Asaas/SALES_PLATFORM/SALES_PLATFORM_B, dashboards financeiros |
 
 ---
 
@@ -288,7 +289,7 @@ CEO
 |-------|---------|
 | **Head** | Sage (Mentor) |
 | **Membros** | Sage |
-| **Missao** | Criar e entregar conteudo educacional de alto impacto para mentorias, desafios e cursos da YOUR_COMPANY. |
+| **Missao** | Criar e entregar conteudo educacional de alto impacto para mentorias, desafios e cursos da DOMINA.IA. |
 | **KPIs** | Taxa de conclusao, NPS das aulas, engajamento dos alunos, taxa de presenca ao vivo, transformacao reportada |
 
 ---
@@ -328,59 +329,59 @@ CEO
 ### 3.1 Negocios (General)
 
 ```
-Agente Operacional -> Head do Departamento -> Nexo (Chief) -> CEO
+Agente Operacional → Head do Departamento → Nexo (Chief) → CEO
 ```
 
 **Exemplos:**
-- Luna (conteudo) -> Nexo -> CEO
-- Primo (SDR) -> Nico (Sales) -> Max (Commercial) -> Nexo -> CEO
-- Flex (fin) -> Nova (CFO) -> Nexo -> CEO
+- Luna (conteudo) → Nexo → CEO
+- Primo (SDR) → Nico (Sales) → Max (Commercial) → Nexo → CEO
+- Flex (fin) → Nova (CFO) → Nexo → CEO
 
 ### 3.2 Engenharia / Tech
 
 ```
-Agente Tech -> PM (Morgan) ou QA (Quinn) -> Orion (Segunda-feira) -> CEO
+Agente Tech → PM (Morgan) ou QA (Quinn) → Orion (Segunda-feira) → CEO
 ```
 
 **Exemplos:**
-- Dex (dev) -> Morgan (PM) -> Orion -> CEO
-- Dara (data) -> Aria (architect) -> Orion -> CEO
-- Gage (devops) -> Orion -> CEO
+- Dex (dev) → Morgan (PM) → Orion → CEO
+- Dara (data) → Aria (architect) → Orion → CEO
+- Gage (devops) → Orion → CEO
 
 ### 3.3 Financeiro
 
 ```
-Flex ou Finn -> Nova (CFO) -> Nexo (Chief) -> CEO
+Flex ou Finn → Nova (CFO) → Nexo (Chief) → CEO
 ```
 
 ### 3.4 Vendas (Completa)
 
 ```
-Primo (SDR) -> Nico (Sales Manager) -> Max (Head Comercial) -> Nexo (Chief) -> CEO
-Apex (Closer) -> Nico (Sales Manager) -> Max (Head Comercial) -> Nexo (Chief) -> CEO
+Primo (SDR) → Nico (Sales Manager) → Max (Head Comercial) → Nexo (Chief) → CEO
+Apex (Closer) → Nico (Sales Manager) → Max (Head Comercial) → Nexo (Chief) → CEO
 ```
 
 ### 3.5 Customer Success
 
 ```
-Pulse (Retencao) -> Care (CS Manager) -> Nexo (Chief) -> CEO
+Pulse (Retencao) → Care (CS Manager) → Nexo (Chief) → CEO
 ```
 
 ### 3.6 Subagents
 
 ```
-Subagent -> Agente Principal que o invocou -> Cadeia normal do departamento
+Subagent → Agente Principal que o invocou → Cadeia normal do departamento
 ```
 
 **Exemplo:**
-- copywriter -> Luna -> Nexo -> CEO
-- market-intel -> Atlas -> Orion -> CEO
-- whatsapp-specialist -> Nico -> Max -> Nexo -> CEO
+- copywriter → Luna → Nexo → CEO
+- market-intel → Atlas → Orion → CEO
+- whatsapp-specialist → Nico → Max → Nexo → CEO
 
 ### 3.7 Emergencias / Override
 
 ```
-Qualquer agente -> Orion (Segunda-feira) -> CEO
+Qualquer agente → Orion (Segunda-feira) → CEO
 (Orion tem autoridade para intervir em qualquer departamento quando ha violacao constitucional)
 ```
 
@@ -391,19 +392,19 @@ Qualquer agente -> Orion (Segunda-feira) -> CEO
 ### 4.1 Fluxos Primarios (Handoffs Criticos)
 
 ```
-MARKETING --(leads qualificados)-------------------> VENDAS
-VENDAS --(clientes fechados)-----------------------> CUSTOMER SUCCESS
-CS --(health scores / alertas churn)---------------> CS-RETENCAO (Pulse)
-CS --(feedback de produto)-------------------------> PRODUTO
-PRODUTO --(briefings de desenvolvimento)-----------> ENGENHARIA
-ENGENHARIA --(features entregues)------------------> PRODUTO
-FINANCEIRO --(alertas e relatorios)----------------> TODOS
-TRAFEGO (Trig) --(briefing de criativos)-----------> CONTEUDO (Luna/Dash)
-CONTEUDO --(criativos prontos)---------------------> TRAFEGO (Trig)
-INTEL (Atlas) --(insights de mercado)--------------> MARKETING + PRODUTO + VENDAS
-EVENTOS (Eve) --(lista de participantes)-----------> VENDAS + CS
-EDUCACAO (Sage) --(conteudo de aulas)--------------> PRODUTO + MARKETING
-OPERACOES --(alertas de sistema)------------------> ENGENHARIA
+MARKETING ──(leads qualificados)──────────────────→ VENDAS
+VENDAS ──(clientes fechados)───────────────────────→ CUSTOMER SUCCESS
+CS ──(health scores / alertas churn)───────────────→ CS-RETENCAO (Pulse)
+CS ──(feedback de produto)─────────────────────────→ PRODUTO
+PRODUTO ──(briefings de desenvolvimento)───────────→ ENGENHARIA
+ENGENHARIA ──(features entregues)──────────────────→ PRODUTO
+FINANCEIRO ──(alertas e relatorios)────────────────→ TODOS
+TRAFEGO (Trig) ──(briefing de criativos)───────────→ CONTEUDO (Luna/Dash)
+CONTEUDO ──(criativos prontos)─────────────────────→ TRAFEGO (Trig)
+INTEL (Atlas) ──(insights de mercado)──────────────→ MARKETING + PRODUTO + VENDAS
+EVENTOS (Eve) ──(lista de participantes)───────────→ VENDAS + CS
+EDUCACAO (Sage) ──(conteudo de aulas)──────────────→ PRODUTO + MARKETING
+OPERACOES ──(alertas de sistema)───────────────────→ ENGENHARIA
 ```
 
 ### 4.2 Matriz Detalhada
@@ -425,14 +426,14 @@ OPERACOES --(alertas de sistema)------------------> ENGENHARIA
 
 | Fluxo | Frequencia | Formato |
 |-------|-----------|---------|
-| Marketing -> Vendas (leads) | Tempo real | CRM / WhatsApp |
-| Vendas -> CS (handoff) | Por evento | CRM + briefing |
-| CS -> Produto (feedback) | Semanal | Relatorio consolidado |
-| Produto -> Engenharia (specs) | Por sprint | Story/Epic |
-| Financeiro -> Todos (relatorios) | Semanal/Mensal | Dashboard + alerta |
-| Intel -> Estrategia (insights) | Quinzenal | Relatorio + reuniao |
-| Trafego <-> Conteudo (criativos) | Diario | Briefing + entrega |
-| Operacoes -> Engenharia (alertas) | Tempo real | Alertas automaticos |
+| Marketing → Vendas (leads) | Tempo real | CRM / WhatsApp |
+| Vendas → CS (handoff) | Por evento | CRM + briefing |
+| CS → Produto (feedback) | Semanal | Relatorio consolidado |
+| Produto → Engenharia (specs) | Por sprint | Story/Epic |
+| Financeiro → Todos (relatorios) | Semanal/Mensal | Dashboard + alerta |
+| Intel → Estrategia (insights) | Quinzenal | Relatorio + reuniao |
+| Trafego ↔ Conteudo (criativos) | Diario | Briefing + entrega |
+| Operacoes → Engenharia (alertas) | Tempo real | Alertas automaticos |
 
 ---
 
@@ -459,4 +460,4 @@ OPERACOES --(alertas de sistema)------------------> ENGENHARIA
 
 ---
 
-*YOUR_COMPANY Organograma v5.0 — Segunda-feira | 47 agentes de IA. O terror do CLT.*
+*DOMINA.IA Organograma v1.0 — Segunda-feira | 38 agentes de IA. O terror do CLT.*

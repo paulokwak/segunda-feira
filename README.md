@@ -2,15 +2,16 @@
 
 # Segunda-feira
 
-### 47+ agentes de IA. Um terminal. Uma empresa inteira.
+### 49+ agentes de IA. 68 skills. 15 rules. Uma empresa inteira.
 
-[![Version](https://img.shields.io/badge/version-6.0-00D26A?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/DOMINA-IA/segunda-feira/releases)
+[![Version](https://img.shields.io/badge/version-6.3-00D26A?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/DOMINA-IA/segunda-feira/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-cc785c?style=for-the-badge&logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code)
-[![Agents](https://img.shields.io/badge/agents-47+-8B5CF6?style=for-the-badge&logo=robot&logoColor=white)](#agentes-core-commands)
-[![Skills](https://img.shields.io/badge/skills-55-F59E0B?style=for-the-badge&logo=zap&logoColor=white)](#skills-skills)
-[![Rules](https://img.shields.io/badge/rules-8-EF4444?style=for-the-badge&logo=shield&logoColor=white)](#rules-rules)
+[![Agents](https://img.shields.io/badge/agents-49+-8B5CF6?style=for-the-badge&logo=robot&logoColor=white)](#agentes-core-commands)
+[![Skills](https://img.shields.io/badge/skills-68-F59E0B?style=for-the-badge&logo=zap&logoColor=white)](#skills-skills)
+[![Rules](https://img.shields.io/badge/rules-15-EF4444?style=for-the-badge&logo=shield&logoColor=white)](#rules-rules)
 [![Self-Healing](https://img.shields.io/badge/self--healing-enabled-10B981?style=for-the-badge&logo=sparkles&logoColor=white)](#v6-intelligence-layer)
+[![Hooks](https://img.shields.io/badge/hooks-5-6366F1?style=for-the-badge&logo=webhook&logoColor=white)](#hooks)
 
 ---
 
@@ -18,7 +19,7 @@
 
 Projetado para [Claude Code](https://docs.anthropic.com/en/docs/claude-code) da Anthropic — transformando um único terminal em uma empresa inteira.
 
-[Instalação](#instalação-rápida-1-comando) · [Arquitetura](#arquitetura) · [Agentes](#o-que-está-incluído) · [V6 Changelog](#changelog)
+[Instalação](#instalação-rápida-1-comando) · [Arquitetura](#arquitetura) · [Agentes](#o-que-está-incluído) · [V6.3 Changelog](#changelog)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/scripts/install.sh | bash
@@ -30,7 +31,7 @@ curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/script
 
 ## Por que o nome
 
-Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enquanto você toma café, 47 agentes já estão trabalhando.
+Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enquanto você toma café, 49 agentes já estão trabalhando.
 
 ---
 
@@ -43,7 +44,7 @@ block-beta
     columns 1
     
     block:L1["🏛️ CAMADA 1 — CONSTITUIÇÃO & GOVERNANÇA"]
-        A1["CLAUDE.md"] A2["8 Rules"] A3["EROS Quality Gates"] A4["IDS Principles"]
+        A1["CLAUDE.md"] A2["15 Rules"] A3["EROS Quality Gates"] A4["IDS Principles"]
     end
     
     block:L2["⚙️ CAMADA 2 — ENGINE CORE (Synkra v4.0.4)"]
@@ -51,15 +52,15 @@ block-beta
     end
     
     block:L3["🤖 CAMADA 3 — AGENTES"]
-        C1["17 Core Agents"] C2["18 Specialist Agents"] C3["Authority Matrix"]
+        C1["31 Core Agents"] C2["21 Specialist Agents"] C3["Authority Matrix"]
     end
     
     block:L4["⚡ CAMADA 4 — SKILLS"]
-        D1["55 Skills"] D2["User-Invocable"] D3["Autocontidas"]
+        D1["68 Skills"] D2["User-Invocable"] D3["Autocontidas"]
     end
     
     block:L5["👥 CAMADA 5 — SQUADS"]
-        E1["14 Squads Especializados"]
+        E1["17 Squads Especializados"]
     end
     
     block:L6["🧠 CAMADA 6 — MEMÓRIA & CONTEXTO"]
@@ -79,7 +80,7 @@ block-beta
 
 ```mermaid
 graph TD
-    CEO["🏢 SEGUNDA-FEIRA<br/>47+ Agentes | 8 Departamentos"]
+    CEO["🏢 SEGUNDA-FEIRA<br/>49+ Agentes | 8 Departamentos"]
     
     CEO --> DIR["👔 Diretoria<br/>Nexo · Orion · Advisory Board"]
     CEO --> ENG["💻 Engenharia<br/>Morgan · Dex · Quinn · Aria<br/>Gage · Dara · Pax · River · Craft · Uma"]
@@ -233,10 +234,10 @@ graph LR
 ## O que está incluído
 
 ### Agentes Core (`commands/`)
-38 agentes com personas, comandos e workflows definidos:
+31 agentes core + 7 commands operacionais:
 
 <details>
-<summary><b>Ver todos os 38 agentes core</b></summary>
+<summary><b>Ver todos os 31 agentes core</b></summary>
 
 | Agente | Role | Modelo |
 |--------|------|--------|
@@ -282,7 +283,7 @@ graph LR
 </details>
 
 ### Agentes Especialistas (`agents/`)
-18 agentes com subagent definitions para domínios específicos:
+21 agentes com subagent definitions para domínios específicos:
 
 | Agente | Persona | Domínio |
 |--------|---------|---------|
@@ -298,11 +299,13 @@ graph LR
 | WhatsApp Specialist | Zap | WhatsApp Bot, automações |
 | Advogado do Diabo | — | Análise crítica, riscos, suposições ocultas |
 | Mestre do Conselho | — | Conselho deliberativo multi-perspectiva |
+| Contract Analyst | Lex | Análise de contratos, riscos, parecer executivo (B2B) |
+| Challenge Funnel | Storm | Challenge Funnel completo — metodologia Fábio Soares, 9 fases |
 | *+ 6 mais...* | | *Copy, Creative, CRO, Launch, Market Intel, Workflow* |
 
 ### Skills (`skills/`)
 
-20 skills invocáveis com `/skill-name`:
+68 skills invocáveis com `/skill-name`:
 
 | Skill | Descrição |
 |-------|-----------|
@@ -315,11 +318,22 @@ graph LR
 | `/swarm-simulation` | Simulação MiroFish multi-agente |
 | `/voice-dubbing` | Pipeline de dublagem 10 etapas |
 | `/vps-setup` | Setup VPS Docker completo |
-| *+ 11 mais...* | *ad-creative, algorithm-hack, cold-outreach, lead-magnets, offer-optimizer, page-cro, social-content, skill-creator, marketing-psychology, ops-catalog, agent-engineer* |
+| `/daily-briefing` | Briefing executivo diário com observações proativas |
+| `/campaign-builder` | Builder de campanhas Meta Ads com checklist 12 itens |
+| `/content-pipeline` | Pipeline automatizado de 21 posts semanais Instagram |
+| `/deploy-orchestra` | Orquestrador de deploy unificado para todos os projetos VPS |
+| `/self-optimize` | Auto-análise e melhoria contínua do framework |
+| `/brand-reverse` | Reverse engineering de identidade de marca em 6 fases |
+| `/micro-trend` | Scout de micro-tendências com confidence score |
+| `/lead-finder` | Busca leads com intenção de compra em Reddit/HN/web |
+| `/predict` | Sugestões preditivas baseadas em padrões do CEO |
+| `/magic-docs` | Documentação viva auto-atualizável |
+| `/reel-to-meta-ad` | Pipeline Reel para Meta Ads com upscale |
+| *+ 48 mais...* | *ad-creative, algorithm-hack, cold-outreach, lead-magnets, offer-optimizer, page-cro, social-content, skill-creator, marketing-psychology, agent-engineer, pattern-detector, feed-results, daily-scan, weekly-sync, content-brief, highlight-hunter, launch-dashboard, video-to-pdf, channels, etc.* |
 
 ### Rules (`rules/`)
 
-8 regras que governam o framework:
+15 regras que governam o framework:
 
 | Rule | Governa |
 |------|---------|
@@ -331,6 +345,13 @@ graph LR
 | `external-api-patterns.md` | SYNC > CACHE > REAL-TIME for API integrations |
 | `mcp-usage.md` | MCP server governance and tool selection |
 | `eros-quality.md` | 5 quality gates, failure taxonomy, proportionality |
+| `model-routing.md` | Roteamento inteligente de modelos — Opus/Sonnet/Haiku |
+| `confidence-guardrails.md` | Confidence score 0-1 em afirmações factuais |
+| `feedback-loop.md` | Consulta obrigatória de resultados antes de criar |
+| `initiative-protocol.md` | Matriz de decisão para ações proativas |
+| `creativity-protocol.md` | 3 etapas: convencional, analogia, inversão |
+| `agent-communication.md` | Mailbox inter-agente, 3 modos de operação |
+| `handoff-protocol.md` | Passagem de bastão obrigatória entre agentes |
 
 ---
 
@@ -422,22 +443,23 @@ Os agentes usam placeholders que você deve substituir:
 ```
 segunda-feira/
 ├── README.md
-├── CLAUDE.md                              # Constituição v6.0
-├── agents/                                # 18 agentes especialistas
-├── commands/                              # 38 agentes core + 7 operacionais
-├── skills/                                # 20 skills invocáveis
+├── CLAUDE.md                              # Constituição v6.3
+├── agents/                                # 21 agentes especialistas
+├── commands/                              # 31 agentes core + 7 operacionais
+│   ├── AIOS/agents/                       # Agentes core (personas)
+│   ├── analyze-competitors.md             # Commands operacionais
+│   └── ...
+├── skills/                                # 68 skills invocáveis
 ├── organization/                          # 8 departamentos
-├── rules/                                 # 8 regras do framework
-├── docs/                                  # [V6] Arquitetura + Workflow Matrix
-│   ├── architecture.md
-│   └── workflow-validation-matrix.md
-├── data/                                  # [V6] IDS Registry + Smart Router
-│   ├── entity-registry.yaml
-│   └── smart-router.yaml
-├── templates/                             # [V6] Decision Log
-│   └── decision-log-template.md
-└── scripts/                               # [V6] Health Check
-    └── health-check.sh
+├── rules/                                 # 15 regras do framework
+├── hooks/                                 # [V6.3] Pre-tool hooks & automação
+│   ├── check-acentos.py                   # Validação de acentos pt-BR
+│   ├── synapse-engine.js                  # Motor de consciência inter-agente
+│   └── precompact-session-digest.js       # Digestão de sessão
+├── docs/                                  # Arquitetura + Workflow Matrix
+├── data/                                  # IDS Registry + Smart Router
+├── templates/                             # Decision Log
+└── scripts/                               # Health Check + instalador
 ```
 
 ---
@@ -473,6 +495,18 @@ segunda-feira/
 
 ## Changelog
 
+### V6.3 (2026-04-01) — Nervous System & Proactive Agents
+- **+49 skills novas** (20 → 68): campaign-builder, content-pipeline, deploy-orchestra, daily-briefing, self-optimize, brand-reverse, micro-trend, lead-finder, predict, magic-docs, reel-to-meta-ad, e mais
+- **+7 rules novas** (8 → 15): model-routing, confidence-guardrails, feedback-loop, initiative-protocol, creativity-protocol, agent-communication, handoff-protocol
+- **+3 agentes** (18 → 21): @contract-analyst (Lex), @challenge-funnel (Storm), _TEMPLATE
+- **Nervous System** — Feedback Loop, Broadcast Channel, Mailbox inter-agente, Pattern Library
+- **Hooks** — check-acentos (validação pt-BR), synapse-engine (consciência inter-agente), session-digest
+- **Commands reestruturados** — AIOS/agents/ para agentes core, commands operacionais na raiz
+- **Protocolo de Handoff** — passagem de bastão obrigatória entre agentes
+- **Model Routing** — Opus/Sonnet/Haiku por tipo de tarefa (~60-70% economia)
+- **Confidence Guardrails** — score 0-1 em afirmações factuais
+- **Creativity Protocol** — 3 etapas: convencional, analogia, inversão
+
 ### V6.0 (2026-03-29) — Intelligence Layer
 - Health Check — 41 verificações automáticas de integridade
 - IDS Entity Registry — 37 entidades catalogadas
@@ -500,7 +534,7 @@ MIT License — use, modifique e distribua livremente.
 
 <div align="center">
 
-*Segunda-feira v6.0 — 47+ agentes de IA. 55 skills. 8 rules. Self-healing. O terror do CLT.*
+*Segunda-feira v6.3 — 49+ agentes de IA. 68 skills. 15 rules. Feedback loop. Mailbox. Handoff. Preditivo. O terror do CLT.*
 
 **[DOMINA.IA](https://github.com/DOMINA-IA)**
 

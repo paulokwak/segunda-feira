@@ -29,13 +29,13 @@ Você é um assistente especializado em gerenciar o WhatsApp Bot integrado ao MY
 
 | Item | Valor |
 |------|-------|
-| VPS | `YOUR_VPS_IP` — root — porta 22 — senha: `YOUR_VPS_PASSWORD` |
+| VPS | `${VPS_IP}` — root — porta 22 — senha: `${VPS_PASSWORD}` |
 | Bot dir | `/opt/whatsapp-bot/` |
 | Bot PM2 | `whatsapp-bot` (porta 3003) |
 | Bot .env | `/opt/whatsapp-bot/.env` |
 | Auth state | `/opt/whatsapp-bot/auth_state/` |
-| MY GROWTH dir | `YOUR_APP_PATH/` |
-| Dashboard | https://your-growth-platform.com/whatsapp |
+| MY GROWTH dir | `/opt/my-growth/` |
+| Dashboard | https://mygrowth.your-domain.com.br/whatsapp |
 | Bot API interna | `http://localhost:3003/api/` |
 
 ## Arquivos do Bot
@@ -48,7 +48,7 @@ Você é um assistente especializado em gerenciar o WhatsApp Bot integrado ao MY
 | `/opt/whatsapp-bot/db.js` | Camada PostgreSQL (mensagens, contatos, tags, métricas) |
 | `/opt/whatsapp-bot/broadcast.js` | Sistema de disparo em massa anti-ban (ficha + VIP + boas-vindas) |
 | `/opt/whatsapp-bot/broadcast-migration.sql` | Schema broadcast (campaigns + log) |
-| `/opt/whatsapp-bot/sync-leads-to-crm.js` | Sync leads de lançamento → crm_contacts |
+| `/opt/whatsapp-bot/sync-leads-to-crm.js` | Sync lancamento_leads → crm_contacts |
 | `/opt/whatsapp-bot/package.json` | Dependências |
 | `/opt/whatsapp-bot/.env` | Config (API key, DB, limites, tags permitidas) |
 
@@ -109,10 +109,10 @@ Agente de vendas consultivo ativado pela tag `vip-closer` no contato.
 
 | Item | Detalhe |
 |------|---------|
-| Persona | Mia, assistente pessoal do Fundador |
+| Persona | Mia, assistente pessoal do YOUR_NAME |
 | Modelo | Claude Sonnet 4 (max 512 tokens) |
 | Ativação | Tag `vip-closer` no whatsapp_contacts |
-| Dados | Busca ficha do lead nas tabelas de lançamento/fichas (nível IA, ocupação, renda, dor, objetivo) |
+| Dados | Busca ficha do lead em lancamento_leads/fichas (nível IA, ocupação, renda, dor, objetivo) |
 | Produto | Acesso VIP Desafio R$67 |
 | Checkout | https://chk.eduzz.com/39VEANXBWR |
 | CRM | Quando envia link, adiciona tag `vip-link-enviado` e move pra stage `interessado` |
@@ -155,9 +155,9 @@ node broadcast.js --status       # Progresso de todas as campanhas
 
 ### Problema
 Números BR podem ter formatos diferentes no WhatsApp vs banco de dados:
-- DB: `35988742008` (sem DDI)
-- WhatsApp JID: `553588742008@s.whatsapp.net` (com DDI, sem nono dígito)
-- WhatsApp ID Meta: `65644800266397` (ID interno, completamente diferente)
+- DB: `${PHONE_DB}` (sem DDI)
+- WhatsApp JID: `${PHONE_WHATSAPP}@s.whatsapp.net` (com DDI, sem nono dígito)
+- WhatsApp ID Meta: `${PHONE_META_ID}` (ID interno, completamente diferente)
 
 ### Solução no /api/send
 1. Adicionar DDI 55 se número tem ≤11 dígitos
@@ -175,12 +175,12 @@ Quando um lead responde de um ID diferente do número de telefone:
 ### Regras de Formato BR
 - SEMPRE adicionar DDI 55 antes de enviar
 - SEMPRE usar onWhatsApp() pra resolver JID correto
-- NUNCA enviar número cru sem DDI (vira código de outro país: 35=Bulgária, 51=Peru, 21=Líbia)
+- NUNCA enviar número cru sem DDI (vira código de outro país: 35=Búlgaria, 51=Peru, 21=Líbia)
 - O nono dígito pode ou não existir — onWhatsApp() resolve
 
 ## Sync Lançamento → CRM (sync-leads-to-crm.js)
 
-Importa leads das tabelas de lançamento para `crm_contacts` com tags e scores.
+Importa leads de `lancamento_leads` para `crm_contacts` com tags e scores.
 
 ```bash
 node sync-leads-to-crm.js --dry-run  # Simula
@@ -228,9 +228,9 @@ Mostra logs recentes:
 
 ### `/whatsapp-bot tags <phone> [add|remove] <tag>`
 Gerenciar tags de um contato:
-- `tags 5541999999999 add bot` → ativa bot para contato
-- `tags 5541999999999 remove bot` → desativa bot
-- `tags 5541999999999` → lista tags do contato
+- `tags ${PHONE_EXAMPLE} add bot` → ativa bot para contato
+- `tags ${PHONE_EXAMPLE} remove bot` → desativa bot
+- `tags ${PHONE_EXAMPLE}` → lista tags do contato
 
 ### `/whatsapp-bot rules`
 Gerenciar regras de auto-resposta:
@@ -258,7 +258,7 @@ Diagnóstico e correção de problemas:
 | Mensagem vai pra país errado | Número sem DDI 55 | SEMPRE adicionar DDI 55. Nunca enviar número BR cru (35=Bulgária, 51=Peru) |
 | Mensagem "Aguardando" | JID errado (com/sem nono dígito) | Usar `onWhatsApp()` pra resolver JID correto antes de enviar |
 | Lead responde de ID diferente | WhatsApp Meta Business ID ≠ phone | `propagateTags()` resolve automaticamente. Se não, adicionar tag manual: `UPDATE whatsapp_contacts SET tags = ARRAY['bot','vip-closer'] WHERE phone = 'ID'` |
-| MY GROWTH caiu após deploy | Build falhou | Rebuild: `cd YOUR_APP_PATH/ && npm run build` |
+| MY GROWTH caiu após deploy | Build falhou | Rebuild: `cd /opt/my-growth && npm run build` |
 | Rate limit | Contato excedeu 30 msgs/hora | Aguardar ou ajustar `.env` |
 | Claude não responde | API key inválida/expirada | Verificar `ANTHROPIC_API_KEY` no `.env` |
 | Broadcast deu ban | Intervalo muito curto | Ajustar: 120s entre msgs + pausa 10min a cada 20 |
@@ -276,7 +276,7 @@ Diagnóstico rápido:
 import paramiko
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('YOUR_VPS_IP', port=22, username='root', password='YOUR_VPS_PASSWORD', timeout=30)
+ssh.connect('${VPS_IP}', port=22, username='root', password='${VPS_PASSWORD}', timeout=30)
 stdin, stdout, stderr = ssh.exec_command('COMANDO', timeout=120)
 print(stdout.read().decode())
 ssh.close()
@@ -307,6 +307,6 @@ ssh.close()
 Script disponível em `~/deploy_whatsapp_bot.py` — faz upload, migration, install, build e restart automaticamente.
 
 ```bash
-export ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
+export ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
 python3 ~/deploy_whatsapp_bot.py
 ```

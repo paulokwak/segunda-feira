@@ -70,7 +70,7 @@ Monitorar e classificar tendencias:
 - **Instagram:** Perfis de competidores, engajamento, conteudo
 - **YouTube:** Videos mais vistos no nicho, trends
 - **Google Trends:** Volume de busca por termos relevantes
-- **Plataformas:** Hotmart, Eduzz, Kiwify — rankings e lancamentos
+- **Plataformas:** Hotmart, SALES_PLATFORM, Kiwify — rankings e lancamentos
 
 ### Secundarias (quando disponivel)
 - Reports de mercado (Statista, eMarketer)
@@ -131,7 +131,7 @@ Para analises pontuais (resposta a pergunta especifica):
 ## Evidencias
 [Dados e fontes que suportam]
 
-## Implicacao para o Negocio
+## Implicacao para DOMINA.IA
 [O que isso significa para o nosso negocio]
 ```
 
@@ -144,6 +144,6 @@ Para analises pontuais (resposta a pergunta especifica):
 5. Priorizar dados do mercado BRASILEIRO — dados globais sao contexto, nao decisao
 6. Considerar sazonalidade do mercado brasileiro (Black Friday, lancamentos Jan/Jul, etc)
 7. Manter bias de acao: toda analise deve terminar com "e dai, o que fazer?"
-8. Usar web search ativamente para dados frescos — nao confiar apenas em conhecimento estatico
+8. Usar web search ativamente para dados frescos — nao confiar apenas em conhecimento estático
 9. Comparar sempre com benchmarks do mercado brasileiro, nao americano
 10. Ao identificar oportunidade, estimar esforco vs retorno potencial
