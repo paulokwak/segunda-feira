@@ -2,24 +2,23 @@
 
 # Segunda-feira
 
-### 49+ agentes de IA. 68 skills. 15 rules. Uma empresa inteira.
+### 52+ agentes de IA. 74 skills. 16 rules. Consciousness Engine. Uma empresa inteira.
 
-[![Version](https://img.shields.io/badge/version-6.3-00D26A?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/DOMINA-IA/segunda-feira/releases)
+[![Version](https://img.shields.io/badge/version-7.0-00D26A?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/DOMINA-IA/segunda-feira/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-cc785c?style=for-the-badge&logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code)
-[![Agents](https://img.shields.io/badge/agents-49+-8B5CF6?style=for-the-badge&logo=robot&logoColor=white)](#agentes-core-commands)
-[![Skills](https://img.shields.io/badge/skills-68-F59E0B?style=for-the-badge&logo=zap&logoColor=white)](#skills-skills)
-[![Rules](https://img.shields.io/badge/rules-15-EF4444?style=for-the-badge&logo=shield&logoColor=white)](#rules-rules)
-[![Self-Healing](https://img.shields.io/badge/self--healing-enabled-10B981?style=for-the-badge&logo=sparkles&logoColor=white)](#v6-intelligence-layer)
-[![Hooks](https://img.shields.io/badge/hooks-5-6366F1?style=for-the-badge&logo=webhook&logoColor=white)](#hooks)
+[![Agents](https://img.shields.io/badge/agents-52+-8B5CF6?style=for-the-badge&logo=robot&logoColor=white)](#agentes)
+[![Skills](https://img.shields.io/badge/skills-74-F59E0B?style=for-the-badge&logo=zap&logoColor=white)](#skills)
+[![Rules](https://img.shields.io/badge/rules-16-EF4444?style=for-the-badge&logo=shield&logoColor=white)](#rules)
+[![Consciousness](https://img.shields.io/badge/consciousness-v1.0-10B981?style=for-the-badge&logo=sparkles&logoColor=white)](#consciousness-engine)
 
 ---
 
-**Framework de orquestração de agentes de IA para desenvolvimento full-stack e operações de negócio.**
+**Framework de orquestração de agentes de IA com Consciousness Engine para desenvolvimento full-stack e operações de negócio.**
 
-Projetado para [Claude Code](https://docs.anthropic.com/en/docs/claude-code) da Anthropic — transformando um único terminal em uma empresa inteira.
+Projetado para [Claude Code](https://docs.anthropic.com/en/docs/claude-code) da Anthropic — transformando um único terminal em uma empresa inteira com agentes que **aprendem**, **refletem** e **focam coletivamente**.
 
-[Instalação](#instalação-rápida-1-comando) · [Arquitetura](#arquitetura) · [Agentes](#o-que-está-incluído) · [V6.3 Changelog](#changelog)
+[Instalação](#instalação) · [Consciousness Engine](#consciousness-engine) · [Arquitetura](#arquitetura) · [Agentes](#agentes) · [Changelog](#changelog)
 
 ```bash
 npm install -g segunda-feira
@@ -31,47 +30,140 @@ npm install -g segunda-feira
 
 ## Por que o nome
 
-Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enquanto você toma café, 49 agentes já estão trabalhando.
+Porque segunda-feira é o dia que todo mundo odeia — mas os agentes amam. Enquanto você toma café, 52 agentes já estão trabalhando. E aprendendo.
+
+---
+
+## Consciousness Engine
+
+> **V7.0** — O que torna o Segunda-feira único no mundo. Nenhum outro framework multi-agente possui isso.
+
+O Consciousness Engine implementa 3 camadas de consciência computacional inspiradas em neurociência cognitiva:
+
+```mermaid
+graph TB
+    subgraph L3["CAMADA 3 — WORKSPACE GLOBAL (GWT)"]
+        W1["Propostas"] --> W2["Saliência"]
+        W2 --> W3["Ressonância"]
+        W3 -->|"2+ agentes"| W4["🔥 IGNIÇÃO"]
+    end
+
+    subgraph L2["CAMADA 2 — METACOGNIÇÃO"]
+        M1["Reflexão por agente"]
+        M2["Taxa de sucesso / Valência"]
+        M3["Recomendação de estratégia"]
+    end
+
+    subgraph L1["CAMADA 1 — MEMÓRIA PROFUNDA"]
+        E1["Episódica — eventos + valência afetiva"]
+        E2["Semântica — knowledge graph de fatos"]
+        E3["Procedural — heurísticas aprendidas"]
+        E4["Consolidação noturna ('sono')"]
+    end
+
+    L1 --> L2 --> L3
+
+    style L3 fill:#1e293b,stroke:#EF4444,color:#fff,stroke-width:2px
+    style L2 fill:#1e293b,stroke:#F59E0B,color:#fff,stroke-width:2px
+    style L1 fill:#1e293b,stroke:#10B981,color:#fff,stroke-width:2px
+```
+
+### Camada 1: Memória Profunda
+
+Cada agente registra episódios com **valência afetiva** (marcadores somáticos computacionais). A consolidação noturna extrai fatos e heurísticas automaticamente.
+
+```bash
+# Registrar episódio
+~/consciousness/scripts/record-episode.sh \
+  --agent "@dev" --type "task_completed" \
+  --summary "Implementou auth JWT" --result "success" \
+  --valence 0.8 --intensity 0.6 \
+  --worked "Consultar docs antes economizou 2h" \
+  --heuristic "Para auth, sempre consultar docs antes de implementar"
+
+# Consolidar ("sono" — roda automaticamente às 23:30)
+~/consciousness/scripts/consolidate.sh
+```
+
+### Camada 2: Metacognição
+
+Agentes analisam sua própria performance e ajustam estratégia.
+
+```bash
+~/consciousness/scripts/reflect.sh --agent @dev --days 7
+# Output: taxa de sucesso, valência média, pontos fortes/fracos, recomendação
+```
+
+### Camada 3: Workspace Global (Global Workspace Theory)
+
+Atenção seletiva coletiva — quando algo importante é detectado, o squad inteiro é mobilizado.
+
+```bash
+# Propor ao workspace
+~/consciousness/scripts/workspace.sh propose \
+  --agent @analyst --content "Conversão caiu 15%" \
+  --urgency 0.9 --impact 0.8 --category revenue
+
+# Outros agentes ressoam → saliência sobe → IGNIÇÃO
+~/consciousness/scripts/workspace.sh resonate PROPOSAL_ID @traffic
+~/consciousness/scripts/workspace.sh evaluate  # Avalia e dispara ignições
+```
+
+**Ignição** ocorre quando: saliência >= 0.7 **E** 2+ agentes ressoam. O squad é mobilizado como um organismo.
+
+### Comparação com o mercado
+
+| Framework | Multi-Agent Real | Event-Driven | Memória Isolada | Feedback Loop | Consciência |
+|-----------|:---:|:---:|:---:|:---:|:---:|
+| CrewAI | Personas | Não | Não | Não | Não |
+| MetaGPT | Personas | Não | Não | Não | Não |
+| AutoGen | Parcial | Parcial | Não | Não | Não |
+| LangGraph | Subgraphs | Grafos | Checkpoint | Não | Não |
+| **Segunda-feira** | **52+ agentes** | **Broadcast** | **Mailbox** | **Sim** | **3 camadas** |
 
 ---
 
 ## Arquitetura
 
-O Segunda-feira é organizado em **7 camadas** que se complementam:
+O Segunda-feira é organizado em **8 camadas**:
 
 ```mermaid
 block-beta
     columns 1
-    
+
     block:L1["🏛️ CAMADA 1 — CONSTITUIÇÃO & GOVERNANÇA"]
-        A1["CLAUDE.md"] A2["15 Rules"] A3["EROS Quality Gates"] A4["IDS Principles"]
+        A1["CLAUDE.md"] A2["16 Rules"] A3["EROS Quality"] A4["IDS Principles"]
     end
-    
-    block:L2["⚙️ CAMADA 2 — ENGINE CORE (Synkra v4.0.4)"]
+
+    block:L2["⚙️ CAMADA 2 — ENGINE CORE"]
         B1["37 Orchestrators"] B2["224 Tasks"] B3["16 Workflows"] B4["Quality Gates"]
     end
-    
+
     block:L3["🤖 CAMADA 3 — AGENTES"]
-        C1["31 Core Agents"] C2["21 Specialist Agents"] C3["Authority Matrix"]
+        C1["31 Core Agents"] C2["28 Specialist Agents"] C3["Authority Matrix"]
     end
-    
+
     block:L4["⚡ CAMADA 4 — SKILLS"]
-        D1["68 Skills"] D2["User-Invocable"] D3["Autocontidas"]
+        D1["74 Skills"] D2["User-Invocable"] D3["Autocontidas"]
     end
-    
+
     block:L5["👥 CAMADA 5 — SQUADS"]
         E1["17 Squads Especializados"]
     end
-    
-    block:L6["🧠 CAMADA 6 — MEMÓRIA & CONTEXTO"]
-        F1["Persistent Memory"] F2["Feedback Loops"] F3["Knowledge Repos (4.9 GB)"]
+
+    block:L6["🧠 CAMADA 6 — CONSCIOUSNESS ENGINE"]
+        F1["Episodic Memory"] F2["Metacognition"] F3["Global Workspace (GWT)"]
     end
-    
-    block:L7["🔧 CAMADA 7 — HOOKS & AUTOMAÇÃO"]
-        G1["Pre-tool Hooks"] G2["Session Digest"] G3["Cron Jobs"]
+
+    block:L7["🔗 CAMADA 7 — NERVOUS SYSTEM"]
+        G1["Feedback Loop"] G2["Broadcast/Mailbox"] G3["Pattern Library"]
     end
-    
-    L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7
+
+    block:L8["🔧 CAMADA 8 — HOOKS & AUTOMAÇÃO"]
+        H1["Pre-tool Hooks"] H2["Consolidation"] H3["Cron Jobs"]
+    end
+
+    L1 --> L2 --> L3 --> L4 --> L5 --> L6 --> L7 --> L8
 ```
 
 ---
@@ -80,17 +172,17 @@ block-beta
 
 ```mermaid
 graph TD
-    CEO["🏢 SEGUNDA-FEIRA<br/>49+ Agentes | 8 Departamentos"]
-    
+    CEO["🏢 SEGUNDA-FEIRA<br/>52+ Agentes | 8 Departamentos"]
+
     CEO --> DIR["👔 Diretoria<br/>Nexo · Orion · Advisory Board"]
     CEO --> ENG["💻 Engenharia<br/>Morgan · Dex · Quinn · Aria<br/>Gage · Dara · Pax · River · Craft · Uma"]
-    CEO --> MKT["📢 Marketing & Conteúdo<br/>Trig · Luna · Dash<br/>Copywriter · Creative Director · CRO"]
-    CEO --> COM["💰 Comercial & Vendas<br/>Max · Nico · Primo · Apex · Zap"]
+    CEO --> MKT["📢 Marketing<br/>Trig · Luna · Dash<br/>Copywriter · Creative Dir · CRO"]
+    CEO --> COM["💰 Comercial<br/>Max · Nico · Primo · Apex · Zap"]
     CEO --> FIN["📊 Financeiro<br/>Nova · Flex · Finn"]
-    CEO --> CS["❤️ CS & Retenção<br/>Care · Pulse"]
-    CEO --> OPS["⚙️ Operações<br/>Ori · Sentinel · Workflow Orchestrator"]
-    CEO --> PRD["🎓 Produto & Educação<br/>Kai · Sage · Eve · Atlas<br/>Market Intel · Launch Strategist"]
-    
+    CEO --> CS["❤️ CS<br/>Care · Pulse"]
+    CEO --> OPS["⚙️ Operações<br/>Ori · Sentinel · Wire"]
+    CEO --> PRD["🎓 Produto<br/>Kai · Sage · Eve · Atlas<br/>Market Intel · Launch Strategist"]
+
     style CEO fill:#1a1a2e,stroke:#00D26A,stroke-width:3px,color:#fff
     style DIR fill:#16213e,stroke:#8B5CF6,color:#fff
     style ENG fill:#16213e,stroke:#3B82F6,color:#fff
@@ -106,18 +198,16 @@ graph TD
 
 ## Story Development Cycle (SDC)
 
-O workflow principal que governa todo desenvolvimento:
-
 ```mermaid
 flowchart LR
-    A["📝 CREATE<br/><i>@sm cria story</i>"] --> B["✅ VALIDATE<br/><i>@po valida (10 pontos)</i>"]
+    A["📝 CREATE<br/><i>@sm cria story</i>"] --> B["✅ VALIDATE<br/><i>@po valida</i>"]
     B -->|"GO ≥7/10"| C["🔨 IMPLEMENT<br/><i>@dev desenvolve</i>"]
     B -->|"NO-GO"| A
-    C --> D["🔍 QA GATE<br/><i>@qa revisa (7 checks)</i>"]
+    C --> D["🔍 QA GATE<br/><i>@qa revisa</i>"]
     D -->|"PASS"| E["🚀 DEPLOY<br/><i>@devops push</i>"]
-    D -->|"FAIL"| F["🔄 QA LOOP<br/><i>max 5 iterações</i>"]
+    D -->|"FAIL"| F["🔄 QA LOOP<br/><i>max 5 iter</i>"]
     F --> C
-    
+
     style A fill:#1e293b,stroke:#8B5CF6,color:#fff,stroke-width:2px
     style B fill:#1e293b,stroke:#F59E0B,color:#fff,stroke-width:2px
     style C fill:#1e293b,stroke:#3B82F6,color:#fff,stroke-width:2px
@@ -126,382 +216,161 @@ flowchart LR
     style F fill:#1e293b,stroke:#6366F1,color:#fff,stroke-width:2px
 ```
 
-**Status:** `Draft` → `Ready` → `InProgress` → `InReview` → `Done`
-
 ---
 
-## V6 Intelligence Layer
+## Agentes
 
-> A V6 transforma o Segunda-feira de um framework **configurado** para um framework **inteligente**.
-
-```mermaid
-graph LR
-    subgraph BEFORE["V5 — Configurado"]
-        direction TB
-        P1["Agentes definidos"] --> P2["Rules escritas"] --> P3["Skills prontas"]
-    end
-    
-    subgraph AFTER["V6 — Inteligente"]
-        direction TB
-        Q1["🏥 Health Check<br/>41 verificações"] --> Q2["🗺️ Smart Router<br/>33 regras routing"]
-        Q2 --> Q3["📦 IDS Registry<br/>37 entidades"]
-        Q3 --> Q4["📋 Decision Log<br/>Learning loop"]
-        Q4 --> Q1
-    end
-    
-    BEFORE -->|"upgrade"| AFTER
-    
-    style BEFORE fill:#1e293b,stroke:#6B7280,color:#fff
-    style AFTER fill:#1e293b,stroke:#00D26A,color:#fff,stroke-width:3px
-```
-
-| Componente | O que faz | Arquivo |
-|-----------|-----------|---------|
-| **Health Check** | 41 verificações automáticas — o framework valida sua própria integridade | `scripts/health-check.sh` |
-| **IDS Entity Registry** | 37 entidades catalogadas — força REUSE > ADAPT > CREATE | `data/entity-registry.yaml` |
-| **Smart Router** | 33 regras de roteamento + 8 colaborações multi-agente | `data/smart-router.yaml` |
-| **Architecture Doc** | 1.055 linhas documentando 7 camadas | `docs/architecture.md` |
-| **Decision Log** | Template para decisões autônomas — learning loop | `templates/decision-log-template.md` |
-| **Workflow Matrix** | 20 workflows com status de maturidade | `docs/workflow-validation-matrix.md` |
-
-<details>
-<summary><b>📊 Health Check Output (exemplo)</b></summary>
-
-```
-╔══════════════════════════════════════════════════════╗
-║   SEGUNDA-FEIRA — FRAMEWORK HEALTH CHECK            ║
-╚══════════════════════════════════════════════════════╝
-
-━━━ 1. CONSTITUIÇÃO ━━━
-  ✅ CLAUDE.md existe (7978 bytes)
-  ✅ Contém referência 'Segunda-feira'
-  ✅ Versão detectada: v6.0
-
-━━━ 2. AGENTES ESPECIALISTAS ━━━
-  ✅ Total de agentes: 18
-  ✅ Todos os agentes têm YAML frontmatter
-  ✅ Nenhum agente vazio
-
-━━━ 3. SKILLS ━━━
-  ✅ Total de skills: 55
-  ✅ Todas as skills têm YAML frontmatter
-  ✅ Todas as skills têm campo 'description'
-  ✅ Nenhuma skill vazia
-
-━━━ 4. REGRAS DE GOVERNANÇA ━━━
-  ✅ Total de regras: 8
-  ✅ Todas as regras têm conteúdo
-  ✅ Todas as 8 regras esperadas presentes
-
-━━━ 5. SISTEMA DE MEMÓRIA ━━━
-  ✅ Total de arquivos de memória: 46
-  ✅ Zero links mortos no MEMORY.md
-  ✅ Zero arquivos órfãos — todos indexados
-
-━━━ 6. AIOS CORE ENGINE ━━━
-  ✅ Versão Synkra: 4.0.4
-  ✅ Workflows definidos: 15
-  ✅ Tasks executáveis: 228
-  ✅ Squads: 13
-  ✅ Agentes core: 17
-  ✅ IDS Entity Registry presente
-  ✅ Smart Router presente
-  ✅ Documento de arquitetura presente
-
-━━━ 7. HOOKS E AUTOMAÇÃO ━━━
-  ✅ Total de hooks: 4
-
-━━━ 8. REPOSITÓRIOS DE CONHECIMENTO ━━━
-  ✅ Grupos INEMA: 28
-  ✅ MiroFish repo presente
-
-╔══════════════════════════════════════════════════════╗
-║                    RESUMO FINAL                     ║
-╚══════════════════════════════════════════════════════╝
-
-  ✅ Passou:    41
-  ⚠️  Avisos:   0
-  ❌ Falhas:    0
-  📊 Total:     41 checks
-
-  SAÚDE DO FRAMEWORK: 100% — EXCELENTE
-```
-
-</details>
-
----
-
-## O que está incluído
-
-### Agentes Core (`commands/`)
-31 agentes core + 7 commands operacionais:
-
-<details>
-<summary><b>Ver todos os 31 agentes core</b></summary>
-
-| Agente | Role | Modelo |
-|--------|------|--------|
-| Nexo | Chief of Staff | opus |
-| Orion | Master Orchestrator | opus |
-| Advisory Board | Conselho Consultivo (11 conselheiros) | opus |
-| Morgan | Product Manager | opus |
-| Dex | Senior Engineer | sonnet |
-| Quinn | Test Architect (QA) | opus |
-| Aria | System Architect | opus |
-| Gage | DevOps Engineer | sonnet |
-| Dara | Data Engineer | sonnet |
-| Pax | Product Owner | opus |
-| River | Scrum Master | haiku |
-| Craft | Squad Creator | sonnet |
-| Uma | UX Design Expert | sonnet |
-| Trig | Gestor de Tráfego Pago | sonnet |
-| Luna | Estrategista de Conteúdo | sonnet |
-| Dash | Produtor de Vídeo com IA | sonnet |
-| Copywriter | Copy Persuasivo Multi-Canal | sonnet |
-| Creative Director | Direção Criativa | sonnet |
-| CRO Specialist | Otimização de Conversão | sonnet |
-| Max | Gestor Comercial Estratégico | opus |
-| Nico | Head de Vendas | sonnet |
-| Primo | SDR | haiku |
-| Apex | Closer High-Ticket | sonnet |
-| Zap | WhatsApp Marketing Specialist | sonnet |
-| Nova | CFO | opus |
-| Flex | Assistente Financeiro | haiku |
-| Finn | Monitor de Plataformas Financeiras | haiku |
-| Care | Customer Success | haiku |
-| Pulse | CS Retention Specialist | sonnet |
-| Ori | Operations Manager | sonnet |
-| Sentinel | Operations Monitor | haiku |
-| Workflow Orchestrator | Orquestrador Multi-Step | opus |
-| Kai | Product Manager (Produtos Digitais) | opus |
-| Sage | Mentor Educacional | haiku |
-| Eve | Events Manager | haiku |
-| Atlas | Business Analyst | sonnet |
-| Market Intel | Inteligência Competitiva | opus |
-| Launch Strategist | Estrategista de Lançamentos | opus |
-
-</details>
-
-### Agentes Especialistas (`agents/`)
-21 agentes com subagent definitions para domínios específicos:
+### 28 Agentes Especialistas (`agents/`)
 
 | Agente | Persona | Domínio |
 |--------|---------|---------|
-| Automation Architect | Wire | n8n, Make, webhooks, pipelines |
-| Cold Outreach | Hunter | Prospecção B2B, cold email |
-| Growth Hacker | Surge | Algoritmos sociais, crescimento |
-| Offer Engineer | Forge | Ofertas irrecusáveis, stack de valor |
-| Prompt Engineer | Prism | Prompts avançados, safety |
-| RAG Architect | Sage | RAG, vector stores, memória dual |
-| Swarm Simulator | Swarm | MiroFish, simulação multi-agente |
-| Vibe Coder | Blast | B.L.A.S.T., context engineering |
-| Voice AI Specialist | Vox | Voice AI, dublagem, TTS, ASR |
-| WhatsApp Specialist | Zap | WhatsApp Bot, automações |
-| Advogado do Diabo | — | Análise crítica, riscos, suposições ocultas |
-| Mestre do Conselho | — | Conselho deliberativo multi-perspectiva |
-| Contract Analyst | Lex | Análise de contratos, riscos, parecer executivo (B2B) |
-| Challenge Funnel | Storm | Challenge Funnel completo — metodologia Fábio Soares, 9 fases |
-| *+ 6 mais...* | | *Copy, Creative, CRO, Launch, Market Intel, Workflow* |
+| @dev | Dex | Full-stack, SDC Fase 3, CodeRabbit self-healing |
+| @traffic | Surge | Meta Ads, Escala Sobral, CPL/ROAS |
+| @content | Luna | Conteúdo Instagram, Reels, carrosséis |
+| @analyst | Aria | Análise de dados, relatórios, métricas |
+| @automation-architect | Wire | n8n, Make, webhooks, pipelines |
+| @cold-outreach | Hunter | Prospecção B2B, cold email |
+| @growth-hacker | Surge | Algoritmos sociais, crescimento |
+| @offer-engineer | Forge | Ofertas irrecusáveis, stack de valor |
+| @prompt-engineer | Prism | Prompts avançados, safety |
+| @rag-architect | Sage | RAG, vector stores, embeddings |
+| @swarm-simulator | Swarm | MiroFish, simulação multi-agente |
+| @vibe-coder | Blast | B.L.A.S.T., context engineering |
+| @voice-ai-specialist | Vox | Voice AI, dublagem, TTS, ASR |
+| @video-producer | Frame | Vídeo IA end-to-end, HeyGen, Kling |
+| @advogado-do-diabo | — | Análise crítica, riscos |
+| @mestre-do-conselho | — | Conselho deliberativo multi-perspectiva |
+| @contract-analyst | Lex | Análise de contratos, parecer B2B |
+| @challenge-funnel | Storm | Challenge Funnel, 9 fases |
+| @inema-scout | Scout | Monitora grupos INEMA + YouTube |
+| @tool-curator | Lens | Curadoria de ferramentas IA |
+| *+ 8 mais* | | *Copy, Creative, CRO, Launch, Market Intel, WhatsApp, Workflow, WA Specialist* |
 
-### Skills (`skills/`)
+### 31 Agentes Core (`commands/`)
 
-68 skills invocáveis com `/skill-name`:
+Nexo, Orion, Advisory Board, Morgan, Dex, Quinn, Aria, Gage, Dara, Pax, River, Craft, Uma, Trig, Luna, Dash, Copywriter, Creative Director, CRO, Max, Nico, Primo, Apex, Zap, Nova, Flex, Finn, Care, Pulse, Ori, Sentinel, e mais.
 
-| Skill | Descrição |
-|-------|-----------|
-| `/paid-ads` | Gestão de tráfego pago Meta Ads (metodologia Sobral) |
-| `/copywriting` | Copy persuasivo — AIDA, PAS, BAB, hooks, CTAs |
-| `/launch-strategy` | Estratégia de lançamento digital em 5 fases |
-| `/agent-council` | Conselho deliberativo multi-perspectiva |
-| `/rag-builder` | Pipelines RAG de produção |
-| `/n8n-workflows` | Biblioteca de workflows n8n prontos |
-| `/swarm-simulation` | Simulação MiroFish multi-agente |
-| `/voice-dubbing` | Pipeline de dublagem 10 etapas |
-| `/vps-setup` | Setup VPS Docker completo |
-| `/daily-briefing` | Briefing executivo diário com observações proativas |
-| `/campaign-builder` | Builder de campanhas Meta Ads com checklist 12 itens |
-| `/content-pipeline` | Pipeline automatizado de 21 posts semanais Instagram |
-| `/deploy-orchestra` | Orquestrador de deploy unificado para todos os projetos VPS |
-| `/self-optimize` | Auto-análise e melhoria contínua do framework |
-| `/brand-reverse` | Reverse engineering de identidade de marca em 6 fases |
-| `/micro-trend` | Scout de micro-tendências com confidence score |
-| `/lead-finder` | Busca leads com intenção de compra em Reddit/HN/web |
-| `/predict` | Sugestões preditivas baseadas em padrões do CEO |
-| `/magic-docs` | Documentação viva auto-atualizável |
-| `/reel-to-meta-ad` | Pipeline Reel para Meta Ads com upscale |
-| *+ 48 mais...* | *ad-creative, algorithm-hack, cold-outreach, lead-magnets, offer-optimizer, page-cro, social-content, skill-creator, marketing-psychology, agent-engineer, pattern-detector, feed-results, daily-scan, weekly-sync, content-brief, highlight-hunter, launch-dashboard, video-to-pdf, channels, etc.* |
+---
 
-### Rules (`rules/`)
+## Skills
 
-15 regras que governam o framework:
+74 skills invocáveis com `/skill-name`:
+
+<details>
+<summary><b>Ver todas as 74 skills</b></summary>
+
+| Categoria | Skills |
+|-----------|--------|
+| **Tráfego** | /paid-ads, /meta-ads-campaign, /proactive-ads, /reel-to-meta-ad, /traffic-autopilot, /campaign-builder |
+| **Copy & Conteúdo** | /copywriting, /ad-creative, /creative-validator, /social-content, /proactive-content, /content-brief, /content-pipeline, /highlight-hunter |
+| **Lançamento** | /launch-strategy, /launch-funnel, /launch-dashboard, /lead-magnets, /plan-launch |
+| **Marca** | /brand-identity, /brand-reverse |
+| **CRO** | /page-cro |
+| **Prospecção** | /cold-outreach-campaign, /lead-finder, /proactive-leads |
+| **Agentes & Framework** | /agent-engineer, /agent-council, /skill-creator, /skill-builder, /skill-generator, /self-optimize, /agent-surveillance |
+| **Consciousness** | /consciousness, /reflect |
+| **Vídeo** | /video-to-pdf, /video-avatar, /video-to-website, /remotion-video, /voice-dubbing, /youtube-transcript |
+| **Automação** | /n8n-workflows, /vps-setup, /deploy-orchestra, /sync-daemon, /github-vercel-deploy |
+| **IA & RAG** | /rag-builder, /swarm-simulation, /algorithm-hack, /banana-image-gen |
+| **Pesquisa** | /analyze-competitors, /research, /micro-trend, /marketing-psychology |
+| **Operações** | /daily-briefing, /daily-scan, /weekly-sync, /feed-results, /pattern-detector, /predict, /magic-docs, /proactive-monitor, /ops-catalog, /error-handling |
+| **WhatsApp** | /whatsapp-bot, /channels |
+| **Web** | /site-cloning, /one-prompt-website, /firecrawl-scraper, /reddit-scraper |
+| **Produtos** | /offer-optimizer, /eduzz-products, /flutter-app, /gohighlevel-convert |
+| **Estratégia** | /planning, /brainstorming, /ceo-mode |
+
+</details>
+
+---
+
+## Rules
+
+16 regras que governam o framework:
 
 | Rule | Governa |
 |------|---------|
 | `workflow-execution.md` | SDC phases, QA Loop, Spec Pipeline, Brownfield Discovery |
-| `story-lifecycle.md` | Status progression, validation checklist, QA gate decisions |
+| `story-lifecycle.md` | Status progression, validation checklist, QA gates |
 | `agent-authority.md` | Delegation matrix — quem pode fazer o quê |
 | `ids-principles.md` | REUSE > ADAPT > CREATE hierarchy |
 | `coderabbit-integration.md` | Self-healing config, severity handling |
-| `external-api-patterns.md` | SYNC > CACHE > REAL-TIME for API integrations |
+| `external-api-patterns.md` | SYNC > CACHE > REAL-TIME for APIs |
 | `mcp-usage.md` | MCP server governance and tool selection |
-| `eros-quality.md` | 5 quality gates, failure taxonomy, proportionality |
-| `model-routing.md` | Roteamento inteligente de modelos — Opus/Sonnet/Haiku |
-| `confidence-guardrails.md` | Confidence score 0-1 em afirmações factuais |
-| `feedback-loop.md` | Consulta obrigatória de resultados antes de criar |
-| `initiative-protocol.md` | Matriz de decisão para ações proativas |
+| `eros-quality.md` | 5 quality gates, failure taxonomy |
+| `model-routing.md` | Roteamento Opus/Sonnet/Haiku por tarefa |
+| `confidence-guardrails.md` | Confidence score 0-1 em afirmações |
+| `feedback-loop.md` | Consulta obrigatória de resultados |
+| `initiative-protocol.md` | Matriz para ações proativas |
 | `creativity-protocol.md` | 3 etapas: convencional, analogia, inversão |
-| `agent-communication.md` | Mailbox inter-agente, 3 modos de operação |
-| `handoff-protocol.md` | Passagem de bastão obrigatória entre agentes |
+| `agent-communication.md` | Mailbox inter-agente, 3 modos |
+| `handoff-protocol.md` | Passagem de bastão obrigatória |
+| `consciousness-engine.md` | Memória episódica, metacognição, workspace global |
 
 ---
 
-## Como usar
+## Instalação
 
-### Instalacao via npm (recomendado)
+### Via npm (recomendado)
 
 ```bash
 npm install -g segunda-feira
 ```
 
-> O instalador faz backup automatico de qualquer configuracao existente antes de instalar.
-
-Ou use `npx` para instalar sem manter o pacote global:
-
-```bash
-npx segunda-feira
-```
-
-### Comandos do CLI
-
-```bash
-segunda-feira            # Instala o framework
-segunda-feira install    # Instala o framework
-segunda-feira update     # Atualiza para versao mais recente
-segunda-feira status     # Verifica instalacao
-segunda-feira uninstall  # Remove o framework (com backup)
-segunda-feira --version  # Mostra versao
-```
-
-### Pre-requisitos
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) instalado
-- [Node.js](https://nodejs.org/) >= 16
-- Git
-
-<details>
-<summary><b>Instalacao via curl (alternativa)</b></summary>
+### Via curl
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/DOMINA-IA/segunda-feira/main/scripts/install.sh | bash
 ```
 
-</details>
-
-<details>
-<summary><b>Instalacao manual (alternativa)</b></summary>
+### Manual
 
 ```bash
-# Clone o repositorio
 git clone https://github.com/DOMINA-IA/segunda-feira.git
+cd segunda-feira
 
-# Copie os arquivos para sua configuracao Claude Code
-cp -r segunda-feira/commands/ ~/.claude/commands/
-cp -r segunda-feira/agents/ ~/.claude/agents/
-cp -r segunda-feira/skills/ ~/.claude/skills/
-cp -r segunda-feira/rules/ ~/.claude/rules/
-cp -r segunda-feira/hooks/ ~/.claude/hooks/
-cp -r segunda-feira/organization/ ~/.claude/organization/
-cp segunda-feira/CLAUDE.md ~/.claude/CLAUDE.md
-
-# V6.3 Intelligence Layer (opcional mas recomendado)
-cp -r segunda-feira/scripts/ ~/.claude/scripts/
-cp -r segunda-feira/templates/ ~/.claude/templates/
-cp -r segunda-feira/data/ ~/.claude/data/
-cp -r segunda-feira/docs/ ~/.claude/docs/
+# Copiar para Claude Code
+cp -r agents/ ~/.claude/agents/
+cp -r skills/ ~/.claude/skills/
+cp -r rules/ ~/.claude/rules/
+cp -r commands/ ~/.claude/commands/
+cp -r hooks/ ~/.claude/hooks/
+cp -r consciousness/ ~/consciousness/
+cp CLAUDE.md ~/.claude/CLAUDE.md
 ```
 
-</details>
+### Pré-requisitos
 
-### Desinstalacao
-
-```bash
-segunda-feira uninstall
-# ou
-bash ~/.claude/scripts/uninstall.sh
-```
-
-### Uso básico
-
-```bash
-# No Claude Code, ative um agente
-@dev           # Ativa o engenheiro sênior
-@content       # Ativa a estrategista de conteúdo
-@aios-master   # Ativa o master orchestrator
-
-# Use comandos de agente
-*help          # Mostra comandos disponíveis
-*create-story  # Cria nova story
-*task dev-develop-story  # Executa task de desenvolvimento
-
-# Use skills
-/paid-ads      # Gestão de tráfego pago
-/copywriting   # Copy persuasivo
-/launch-strategy  # Estratégia de lançamento
-
-# V6: Health check do framework
-bash ~/.claude/scripts/health-check.sh
-```
-
-### Personalização
-
-Os agentes usam placeholders que você deve substituir:
-
-| Placeholder | Substitua por |
-|------------|--------------|
-| `YOUR_COMPANY` | Nome da sua empresa |
-| `YOUR_NAME` | Seu nome |
-| `@your-handle` | Seu @ do Instagram |
-| `your-domain.com.br` | Seu dominio |
-| `${VPS_IP}` | IP do seu servidor VPS |
-| `${VPS_PASSWORD}` | Senha do VPS |
-| `${VPS_USER}` | Usuario do VPS (ex: root) |
-| `${HOSTINGER_IP}` | IP do Hostinger |
-| `${PIXEL_ID}` | Seu Pixel Meta |
-| `${PAGE_ID}` | Seu Page ID Meta |
-| `${META_AD_ACCOUNT}` | Seu Ad Account Meta |
-| `${INSTAGRAM_ACCOUNT_ID}` | Seu Instagram Account ID |
-| `${DATABASE_URL}` | Connection string do banco |
-| `${TELEGRAM_BOT_TOKEN}` | Token do bot Telegram |
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) instalado
+- [Node.js](https://nodejs.org/) >= 16
+- Git
 
 ---
 
-## Estrutura do repositório
+## Estrutura
 
 ```
 segunda-feira/
-├── package.json                           # npm package config
-├── bin/                                   # CLI installer (Node.js)
-│   ├── cli.js                             # segunda-feira CLI
-│   └── postinstall.js                     # Auto-install on npm install
-├── README.md
-├── LICENSE
-├── CLAUDE.md                              # Constituição v6.3
-├── agents/                                # 21 agentes especialistas
-├── commands/                              # 31 agentes core + 7 operacionais
-│   ├── AIOS/agents/                       # Agentes core (personas)
-│   ├── analyze-competitors.md             # Commands operacionais
-│   └── ...
-├── skills/                                # 68 skills invocáveis
-├── organization/                          # 8 departamentos
-├── rules/                                 # 15 regras do framework
-├── hooks/                                 # [V6.3] Pre-tool hooks & automação
-│   ├── check-acentos.py                   # Validação de acentos pt-BR
-│   ├── synapse-engine.js                  # Motor de consciência inter-agente
-│   └── precompact-session-digest.js       # Digestão de sessão
-├── docs/                                  # Arquitetura + Workflow Matrix
-├── data/                                  # IDS Registry + Smart Router
-├── templates/                             # Decision Log
-└── scripts/                               # Health Check + instalador
+├── CLAUDE.md                    # Constituição v7.0
+├── agents/                      # 28 agentes especialistas
+├── commands/                    # 31 agentes core + commands
+├── skills/                      # 74 skills invocáveis
+├── rules/                       # 16 regras de governança
+├── consciousness/               # 🧠 Consciousness Engine v1.0
+│   ├── memory/
+│   │   ├── episodic/            #   Eventos + valência afetiva
+│   │   ├── semantic/            #   Knowledge graph
+│   │   ├── procedural/          #   Heurísticas aprendidas
+│   │   ├── prospective/         #   Intenções futuras
+│   │   └── consolidation/       #   Logs de consolidação
+│   ├── metacognition/           #   Reflexões por agente
+│   ├── workspace/               #   Workspace global (GWT)
+│   └── scripts/                 #   record, consolidate, reflect, workspace
+├── hooks/                       # Pre-tool hooks & automação
+├── organization/                # 8 departamentos
+├── docs/                        # Arquitetura + Workflows
+├── data/                        # IDS Registry + Smart Router
+├── templates/                   # Decision Log
+└── scripts/                     # Instalador + Health Check
 ```
 
 ---
@@ -510,24 +379,34 @@ segunda-feira/
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
 **Desenvolvimento**
-- **IDS** — REUSE > ADAPT > CREATE
-- **CodeRabbit** — Self-healing de código
-- **EROS** — 5 portões de qualidade
-- **B.L.A.S.T.** — Context engineering AI-first
-- **MiroFish** — Simulação multi-agente
+- IDS — REUSE > ADAPT > CREATE
+- CodeRabbit — Self-healing
+- EROS — 5 portões de qualidade
+- B.L.A.S.T. — Context engineering
+- MiroFish — Simulação multi-agente
 
 </td>
-<td width="50%">
+<td width="33%">
 
 **Marketing & Vendas**
-- **Pedro Sobral** — Escala e pausa Meta Ads
-- **Alex Hormozi** — Ofertas irrecusáveis
-- **Brian Manon** — Creative velocity
-- **Motion** — Analytics de criativos
-- **SPIN Selling** — High-ticket closing
+- Pedro Sobral — Escala Meta Ads
+- Alex Hormozi — Ofertas irrecusáveis
+- Brian Manon — Creative velocity
+- Motion — Analytics de criativos
+- SPIN Selling — High-ticket closing
+
+</td>
+<td width="33%">
+
+**Consciência**
+- Global Workspace Theory (Baars)
+- Marcadores somáticos (Damásio)
+- Reflexion (Shinn et al.)
+- Society of Mind (Minsky)
+- Memória episódica (Tulving)
 
 </td>
 </tr>
@@ -537,34 +416,35 @@ segunda-feira/
 
 ## Changelog
 
+### V7.0 (2026-04-06) — Consciousness Engine
+
+- **Consciousness Engine v1.0** — 3 camadas: memória profunda, metacognição, workspace global (GWT)
+- **Memória episódica** com valência afetiva (marcadores somáticos computacionais)
+- **Knowledge graph semântico** — fatos consolidados automaticamente
+- **Heurísticas procedurais** — regras aprendidas: "Quando X, fazer Y porque Z"
+- **Metacognição** — reflexão por agente com taxa de sucesso, valência, recomendação
+- **Workspace Global** — atenção seletiva coletiva com competição, saliência e ignição
+- **Consolidação noturna** — cron que extrai padrões dos episódios ("sono")
+- **On Completion Protocol** — agentes registram episódios automaticamente (MUST)
+- **+7 agentes especialistas** (21 → 28): dev, traffic, content, analyst, inema-scout, tool-curator, video-producer
+- **+6 skills** (68 → 74): /consciousness, /reflect, /carousel-3d, /empire-landing, /sync-daemon
+- **+1 rule** (15 → 16): consciousness-engine.md
+- **Dados sanitizados** para release open source
+
 ### V6.3 (2026-04-01) — Nervous System & Proactive Agents
-- **+49 skills novas** (20 → 68): campaign-builder, content-pipeline, deploy-orchestra, daily-briefing, self-optimize, brand-reverse, micro-trend, lead-finder, predict, magic-docs, reel-to-meta-ad, e mais
-- **+7 rules novas** (8 → 15): model-routing, confidence-guardrails, feedback-loop, initiative-protocol, creativity-protocol, agent-communication, handoff-protocol
-- **+3 agentes** (18 → 21): @contract-analyst (Lex), @challenge-funnel (Storm), _TEMPLATE
-- **Nervous System** — Feedback Loop, Broadcast Channel, Mailbox inter-agente, Pattern Library
-- **Hooks** — check-acentos (validação pt-BR), synapse-engine (consciência inter-agente), session-digest
-- **Commands reestruturados** — AIOS/agents/ para agentes core, commands operacionais na raiz
-- **Protocolo de Handoff** — passagem de bastão obrigatória entre agentes
-- **Model Routing** — Opus/Sonnet/Haiku por tipo de tarefa (~60-70% economia)
-- **Confidence Guardrails** — score 0-1 em afirmações factuais
-- **Creativity Protocol** — 3 etapas: convencional, analogia, inversão
+
+- +49 skills (20 → 68), +7 rules (8 → 15), +3 agentes (18 → 21)
+- Nervous System: Feedback Loop, Broadcast, Mailbox, Pattern Library
+- Hooks: check-acentos, synapse-engine, session-digest
+- Handoff Protocol, Model Routing, Confidence Guardrails, Creativity Protocol
 
 ### V6.0 (2026-03-29) — Intelligence Layer
-- Health Check — 41 verificações automáticas de integridade
-- IDS Entity Registry — 37 entidades catalogadas
-- Smart Router — 33 regras de roteamento + 8 multi-agent collaborations
-- Architecture Doc — 7 camadas documentadas (1055 linhas)
-- Decision Log Template — Learning loop para decisões autônomas
-- Workflow Validation Matrix — 20 workflows com status de maturidade
-- +2 agentes: @advogado-do-diabo, @mestre-do-conselho
-- +1 regra: EROS Quality Gates
-- 100% skills padronizadas com YAML frontmatter
+
+- Health Check (41 verificações), IDS Registry, Smart Router, Architecture Doc
 
 ### V5.0 (2026-03-20) — Consolidation
-- Sanitização completa, 47 agentes, 20 skills
 
 ### V3.0 (2026-03-18) — Foundation
-- Release inicial: 38 agentes, estrutura base
 
 ---
 
@@ -576,7 +456,7 @@ MIT License — use, modifique e distribua livremente.
 
 <div align="center">
 
-*Segunda-feira v6.3 — 49+ agentes de IA. 68 skills. 15 rules. Feedback loop. Mailbox. Handoff. Preditivo. O terror do CLT.*
+*Segunda-feira v7.0 — 52+ agentes. 74 skills. 16 rules. Consciousness Engine. Memória que aprende. Squad que pensa. O terror do CLT.*
 
 **[DOMINA.IA](https://github.com/DOMINA-IA)**
 

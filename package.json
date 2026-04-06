@@ -1,7 +1,7 @@
 {
   "name": "segunda-feira",
-  "version": "6.3.0",
-  "description": "Framework de orquestracao de agentes de IA para Claude Code — 49+ agentes, 68 skills, 15 rules. O terror do CLT.",
+  "version": "7.0.0",
+  "description": "Framework de orquestração de agentes de IA com Consciousness Engine para Claude Code — 52+ agentes, 74 skills, 16 rules. O terror do CLT.",
   "bin": {
     "segunda-feira": "./bin/cli.js"
   },
@@ -17,6 +17,11 @@
     "claude",
     "ai",
     "automation",
+    "multi-agent",
+    "consciousness",
+    "metacognition",
+    "global-workspace-theory",
+    "episodic-memory",
     "segunda-feira",
     "domina-ia"
   ],
@@ -41,6 +46,7 @@
     "rules/",
     "hooks/",
     "organization/",
+    "consciousness/",
     "scripts/",
     "templates/",
     "data/",
