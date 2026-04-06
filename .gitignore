@@ -3,3 +3,30 @@ node_modules/
 .env
 *.log
 .DS_Store
+
+# Dados sensíveis (nunca subir)
+*.env
+*.env.*
+credentials/
+secrets/
+
+# Dados operacionais (gerados em runtime)
+consciousness/memory/episodic/*.jsonl
+consciousness/memory/procedural/heuristics.jsonl
+consciousness/memory/consolidation/*.log
+consciousness/metacognition/reflections/*.json
+consciousness/workspace/ignition-log.jsonl
+broadcast/
+feedback-loop/
+observations/
+
+# Manter schemas e .gitkeep
+!consciousness/memory/episodic/schema.json
+!consciousness/memory/episodic/.gitkeep
+!consciousness/memory/procedural/.gitkeep
+!consciousness/memory/consolidation/.gitkeep
+!consciousness/metacognition/reflections/.gitkeep
+!consciousness/workspace/.gitkeep
+!consciousness/workspace/proposals.json
+!consciousness/memory/semantic/knowledge-graph.json
+!consciousness/memory/prospective/intentions.json

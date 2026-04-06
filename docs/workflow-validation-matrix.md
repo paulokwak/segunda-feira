@@ -21,12 +21,12 @@
 
 | # | Workflow | Arquivo YAML | Status | Execuções | Projetos | Notas |
 |---|---------|-------------|--------|-----------|----------|-------|
-| 1 | **Story Development Cycle (SDC)** | `story-development-cycle.yaml` | **BATTLE-TESTED** | 20+ | ALR, Client Project, Delivery App | Workflow principal — Create→Validate→Implement→QA Gate |
-| 2 | **QA Loop** | `qa-loop.yaml` | **VALIDADO** | 5+ | ALR, Client Project | Review-fix iterativo, max 5 iterações |
+| 1 | **Story Development Cycle (SDC)** | `story-development-cycle.yaml` | **BATTLE-TESTED** | 20+ | Production Projects | Workflow principal — Create→Validate→Implement→QA Gate |
+| 2 | **QA Loop** | `qa-loop.yaml` | **VALIDADO** | 5+ | Production Projects | Review-fix iterativo, max 5 iterações |
 | 3 | **Spec Pipeline** | `spec-pipeline.yaml` | **PARCIAL** | 2-3 | Delivery App | Fases Gather e Write Spec usadas; Critique e Plan menos |
 | 4 | **Brownfield Discovery** | `brownfield-discovery.yaml` | **PARCIAL** | 1-2 | Client Dashboard | Fases 1-3 (data collection) usadas; fases 8-10 raramente |
 | 5 | **Development Cycle** | `development-cycle.yaml` | **BATTLE-TESTED** | 15+ | Vários | Variante simplificada do SDC |
-| 6 | **Epic Orchestration** | `epic-orchestration.yaml` | **VALIDADO** | 3-5 | ALR, Client Project | Multi-story orchestration por @pm |
+| 6 | **Epic Orchestration** | `epic-orchestration.yaml` | **VALIDADO** | 3-5 | Production Projects | Multi-story orchestration por @pm |
 
 ## Workflows de Projeto
 

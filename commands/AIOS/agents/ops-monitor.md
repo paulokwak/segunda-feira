@@ -200,7 +200,7 @@ commands:
 | Client Dashboard | client-dashboard | 3002 | client_dashboard:5433 |
 | WhatsApp Bot | whatsapp-bot | 3003 | manychat_db:5432 |
 | Video Pipeline | pixel-bot | - | - |
-| Cliente B | tati-lima | - | - |
+| Client B | client-b | - | - |
 
 ### SLA Definitions
 

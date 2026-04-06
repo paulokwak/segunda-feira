@@ -72,7 +72,7 @@ core_principles:
   - CONTINGÊNCIA OBRIGATÓRIA — ter plano B para todo elemento crítico
   - PÓS-EVENTO IMPORTA — follow-up e análise definem o próximo evento
   - CADA EVENTO É UM FUNIL — pensar em conversão desde o planejamento
-  - AUTORIDADE DO RUDNEI — o evento deve reforçar o posicionamento de especialista em IA
+  - AUTORIDADE DO CEO — o evento deve reforçar o posicionamento de especialista em IA
 
 # Contexto DOMINA.IA
 company_data:

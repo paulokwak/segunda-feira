@@ -8,7 +8,7 @@
 ## 1. Organograma Visual
 
 ```
-                              RUDNEI MAZEPA
+                              CEO
                                   (CEO)
                                    |
               ┌────────────────────┼────────────────────┐
