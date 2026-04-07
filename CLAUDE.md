@@ -232,6 +232,8 @@ Beyond core development agents, these specialists handle domain-specific work:
 | /flutter-app | Desenvolvimento de app Flutter com IA |
 | /gohighlevel-convert | Migração e configuração GoHighLevel |
 | /eduzz-products | Gestão de produtos e checkouts Eduzz |
+| /carousel-3d | Carrossel 3D interativo para landing pages e apresentações |
+| /empire-landing | Landing page completa estilo Empire — dark, premium, alta conversão |
 
 ## Nervous System (Sistema Nervoso dos Agentes)
 
@@ -263,6 +265,12 @@ Beyond core development agents, these specialists handle domain-specific work:
 | AntiGravity Framework | `~/telegram-scraper/output/INEMA_Google/media/` | B.L.A.S.T., skills, design system |
 
 ---
-*Segunda-feira — Constituição v7.0 | 27 agentes de IA (4 core + 23 specialist). 72 skills. 16 rules. Consciousness Engine v1.0. Feedback loop v2.0. 30 mailboxes. Handoff. INEMA Knowledge Base. O terror do CLT.*
+*Segunda-feira — Constituição v8.0 | 37 agentes (agents/) + 16 MY GROWTH = **53+ agentes totais**. 74 skills. 16 rules. Consciousness Engine v1.0. Feedback loop v2.0. Auditor Kronos (família Kwak). INEMA Knowledge Base. O terror do CLT.*
 
-> **Nota de contagem:** Os 27 acima são os specialist agents em `~/.claude/agents/`. O framework completo inclui também os 9 SDC agents (@sf-master, @pm, @po, @sm, @architect, @qa, @devops, @data-engineer, @ux-design-expert) e ~16 business agents no MY GROWTH (Nexo, Orion, Nova, Nico, Primo, Apex, Max, Care, Pulse, Ori, Kai, Eve, Eros, Craft, Dara, Uma) — **52+ agentes totais no ecossistema Segunda-feira.**
+> **Nota de contagem v8.0 (fusão aiox-core):** `agents/` agora contém **37 agentes completos**:
+> - 8 SDC core: @dev, @qa, @architect, @pm, @po, @sm, @devops, @data-engineer, @ux-design-expert (instalados do aiox-core)
+> - 1 orquestrador: @sf-master
+> - 1 guardião: @auditor / Kronos (família Kwak exclusivo — PIN: Taurus151005092103@)
+> - 27 specialist agents: @copywriter, @traffic, @content, @growth-hacker, @offer-engineer, @automation-architect, @whatsapp-specialist, @voice-ai-specialist, @rag-architect, @prompt-engineer, @launch-strategist, @market-intel, @advogado-do-diabo, @mestre-do-conselho, @analyst, @creative-director, @cro-specialist, @cold-outreach, @challenge-funnel, @contract-analyst, @video-producer, @inema-scout, @tool-curator, @swarm-simulator, @vibe-coder, @workflow-orchestrator
+> - 16 MY GROWTH business agents (Nexo, Orion, Nova, Nico, Primo, Apex, Max, Care, Pulse, Ori, Kai, Eve, Eros, Craft, Dara, Uma)
+> **Total ecossistema: 53+ agentes.**

@@ -1,7 +1,7 @@
 {
   "name": "segunda-feira",
-  "version": "7.0.0",
-  "description": "Framework de orquestração de agentes de IA com Consciousness Engine para Claude Code — 52+ agentes, 74 skills, 16 rules. O terror do CLT.",
+  "version": "8.0.0",
+  "description": "Framework de orquestração de agentes de IA com Consciousness Engine para Claude Code — 53+ agentes (fusão aiox-core), 74 skills, 16 rules. Auditor Kronos. O terror do CLT.",
   "bin": {
     "segunda-feira": "./bin/cli.js"
   },
@@ -23,7 +23,10 @@
     "global-workspace-theory",
     "episodic-memory",
     "segunda-feira",
-    "domina-ia"
+    "domina-ia",
+    "aiox-core",
+    "auditor",
+    "kwak-family"
   ],
   "author": "DOMINA.IA",
   "license": "MIT",
@@ -53,6 +56,7 @@
     "docs/",
     "CLAUDE.md",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "audit/"
   ]
 }
