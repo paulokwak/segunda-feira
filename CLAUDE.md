@@ -13,8 +13,9 @@ Segunda-feira is a meta-framework that orchestrates AI agents for full stack dev
 <!-- SF-MANAGED-START: agent-system -->
 ## Agent System
 
-- Activate agents with `@agent-name`: @dev, @qa, @architect, @pm, @po, @sm, @analyst, @content
+- Activate agents with `@agent-name`: @dev, @qa, @architect, @pm, @po, @sm, @analyst, @content, @devops, @data-engineer, @ux-design-expert
 - Master agent: `@sf-master`
+- **Auditor (Braço Direito Paulo Kwak):** `@auditor` — acesso restrito à família Kwak
 - Agent commands use `*` prefix: `*help`, `*create-story`, `*task`, `*exit`
 - When an agent is active: adopt its persona, expertise, workflow patterns, and perspective for the entire interaction
 <!-- SF-MANAGED-END: agent-system -->
@@ -107,6 +108,23 @@ Agentes do ciclo de desenvolvimento principal:
 | @analyst | Aria | Análise de dados, relatórios executivos, métricas, feedback loop |
 | @content | Luna | Conteúdo Instagram: 21 posts/semana, Reels, carrosséis, legends |
 | @traffic | Surge | Meta Ads, Escala Sobral, CPL/ROAS, criativos, campanhas |
+| @architect | Aria | Arquitetura de sistemas, stack selection, APIs, segurança |
+| @pm | Morgan | Product Manager, PRDs, épicos, spec pipeline |
+| @po | Pax | Product Owner, validação de stories, GO/NO-GO |
+| @sm | River | Scrum Master, criação de stories |
+| @qa | Quinn | QA Gate (7 checks), QA Loop, code review |
+| @devops | Gage | git push EXCLUSIVO, PRs, CI/CD, releases, MCP |
+| @data-engineer | Dara | Schema SQL, migrations, RLS, query optimization |
+| @ux-design-expert | Uma | UX/UI, design system, acessibilidade, frontend specs |
+
+## Auditor — Braço Direito de Paulo Kwak
+
+| Agent | Persona | Autoridade |
+|-------|---------|-----------|
+| @auditor | Kronos | Auditor supremo — família Kwak EXCLUSIVO (Paulo, Jolynne, Krovyan) |
+
+**PIN de autorização:** `Taurus151005092103@` — obrigatório para TODOS (inclusive Paulo Kwak, criador).
+O PIN protege o sistema mesmo em sessões comprometidas.
 
 ## Specialist Agents (Casual — ~/.claude/agents/)
 
